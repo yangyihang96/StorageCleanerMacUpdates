@@ -3,6 +3,65 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.40</title>
+            <pubDate>Fri, 10 Jul 2026 20:45:42 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.40</link>
+            <sparkle:version>202607102100</sparkle:version>
+            <sparkle:shortVersionString>1.1.40</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
+
+版本：1.1.40
+构建：由发布脚本生成
+
+建议发送：
+1. StorageCleanerMac.dmg
+2. StorageCleanerMac.zip（备用）
+
+中文文件名版本也会同步生成：
+1. 存储清理助手.dmg
+2. 存储清理助手.zip
+
+本版重点：
+- 自动更新改用 Sparkle 2.9.4，支持应用内检查、下载、EdDSA 校验、原子替换和自动重启。
+- 更新 feed 与源码仓库分离；公开更新仓库只保存签名 appcast 和二进制发布包，源码仓库继续保持私有。
+- 移除对本机 GitHub CLI 登录态的依赖，朋友电脑无需安装或登录 gh 即可访问更新源。
+- 默认每 6 小时自动检查并下载更新；“工具 > 检测更新”可以立即手动检查。
+- 移除旧的“打开发布页/下载后手动替换”弹窗和相关无用状态，更新过程统一交给 Sparkle。
+- 发布脚本强制检查 Sparkle.framework、feed、公钥、自动更新策略、运行时链接和完整许可证；任一缺失都会停止打包。
+- Sparkle 私钥只保存在本机安全存储中，仓库和 App Bundle 只包含公钥。
+
+验证结果：
+- ./script/test.sh 通过：263 个测试，0 失败（默认跳过 1 个需显式启用的实机测试）。
+- ./script/build_and_run.sh --verify 通过。
+- 自动更新实机验证：先安装 1.1.39 引导版，再通过“检测更新”完成 1.1.40 的下载、校验、替换和重启。
+- App bundle 会继续通过 codesign 校验。
+- DMG 会继续通过 hdiutil verify 校验。
+- DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
+
+当前限制：
+- Sparkle 更新包已使用独立 EdDSA 签名，但当前 App 仍是 Apple Development 或本机可用签名，不是 Developer ID 公证版本。
+- 朋友电脑如果提示“无法验证开发者”或“文件已损坏”，通常是 Gatekeeper 拦截未公证 App，不代表 DMG 或 ZIP 真坏。
+
+朋友打开方式：
+1. 打开 DMG，把 App 拖到 Applications。
+2. 如果提示无法验证开发者，在 Applications 里 Control + 点击 App，选择“打开”。
+3. 如果仍提示文件损坏，在终端运行：
+   xattr -dr com.apple.quarantine /Applications/存储清理助手.app
+4. 后续继续从 /Applications/存储清理助手.app 打开；不要反复从 DMG、下载目录或不同副本启动，否则 macOS 可能把它当成新 App，再次要求确认文件访问权限。
+
+要做到双击即开：
+1. 安装 Apple Developer Program 的 Developer ID Application 证书。
+2. 配置 notarytool 凭据。
+3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac-1.1.40.zip" length="40251689" type="application/octet-stream" sparkle:edSignature="kdFmWWaavqmXQylg507SQnf/beD2Lze2lpweuPeSOooXa0x/ule5MJY8otXY0DWiLhyNEswSmUNWY9HuiFmHDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac202607102100-202607102035.delta" sparkle:deltaFrom="202607102035" length="6866" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xDVHcw6BHIP7HlqCmQRTRMx/vfzWXD1bzQntiyah8Ftg5CpnwZMA0KUhRjR7EFmVSRxYO1PhAv2nJBO0L28KDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.39</title>
             <pubDate>Fri, 10 Jul 2026 20:33:32 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.39</link>
