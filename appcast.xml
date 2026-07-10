@@ -3,16 +3,16 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
-            <title>1.1.40</title>
-            <pubDate>Fri, 10 Jul 2026 20:45:42 +1000</pubDate>
-            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.40</link>
-            <sparkle:version>202607102100</sparkle:version>
-            <sparkle:shortVersionString>1.1.40</sparkle:shortVersionString>
+            <title>1.1.41</title>
+            <pubDate>Fri, 10 Jul 2026 21:51:45 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.41</link>
+            <sparkle:version>202607102150</sparkle:version>
+            <sparkle:shortVersionString>1.1.41</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
 
-版本：1.1.40
+版本：1.1.41
 构建：由发布脚本生成
 
 建议发送：
@@ -24,18 +24,17 @@
 2. 存储清理助手.zip
 
 本版重点：
-- 自动更新改用 Sparkle 2.9.4，支持应用内检查、下载、EdDSA 校验、原子替换和自动重启。
-- 更新 feed 与源码仓库分离；公开更新仓库只保存签名 appcast 和二进制发布包，源码仓库继续保持私有。
-- 移除对本机 GitHub CLI 登录态的依赖，朋友电脑无需安装或登录 gh 即可访问更新源。
-- 默认每 6 小时自动检查并下载更新；“工具 > 检测更新”可以立即手动检查。
-- 移除旧的“打开发布页/下载后手动替换”弹窗和相关无用状态，更新过程统一交给 Sparkle。
-- 发布脚本强制检查 Sparkle.framework、feed、公钥、自动更新策略、运行时链接和完整许可证；任一缺失都会停止打包。
-- Sparkle 私钥只保存在本机安全存储中，仓库和 App Bundle 只包含公钥。
+- 主窗口改为以健康度圆环、扫描状态和单一主操作为视觉中心，不再使用“设置面板 + 说明卡列表”的首页结构。
+- 未扫描、历史结果和扫描完成三种状态使用同一套智能体检界面；扫描完成后直接显示真实可清理量和清理预览入口。
+- 侧边栏改为更紧凑的单行导航，描述信息不再常驻占位，但继续保留辅助功能提示。
+- 首页功能入口只显示真实数值或明确动作；未读取内存和应用数据时显示“打开刷新/打开查看”，不再误报为 0。
+- 首页重复扫描按钮被合并，窄窗口会自动隐藏重复的历史容量信息，避免文字截断和布局拥挤。
+- Sparkle 自动更新链路继续使用公开签名 feed、EdDSA 校验、原子替换和自动重启；默认每 6 小时检查。
 
 验证结果：
 - ./script/test.sh 通过：263 个测试，0 失败（默认跳过 1 个需显式启用的实机测试）。
 - ./script/build_and_run.sh --verify 通过。
-- 自动更新实机验证：先安装 1.1.39 引导版，再通过“检测更新”完成 1.1.40 的下载、校验、替换和重启。
+- 自动更新实机验证：发布后从 1.1.40 通过“检测更新”升级到 1.1.41。
 - App bundle 会继续通过 codesign 校验。
 - DMG 会继续通过 hdiutil verify 校验。
 - DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
@@ -56,6 +55,20 @@
 2. 配置 notarytool 凭据。
 3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
 ]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.41/StorageCleanerMac-1.1.41.zip" length="40309028" type="application/octet-stream" sparkle:edSignature="nHr8GGOSxfoZf9xau+4NsRff+j3gtGipCROZrzVFRgsPglJhuZzyfjZ2/ZC5N5u6w6KCXUHp27d/Mo034R8FAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.41/StorageCleanerMac202607102150-202607102100.delta" sparkle:deltaFrom="202607102100" length="613070" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EUsNwg9p3OMgxfcpXNi6GxvbyYiHqh4iAwO3GNgODP3wZMlTye4FNmq0+f4wIS4fYPmUICI3D3ZJPkY4Sk4kDQ=="/>
+                <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.41/StorageCleanerMac202607102150-202607102035.delta" sparkle:deltaFrom="202607102035" length="612794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="H+ScGArcScxp2wXsy/HXCBY3qZ+d6eEsxsaOx8Gd6jJtmlhpYEACIO/mcC1og3w1QIxhkholIhRwYKOhWY0kCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.1.40</title>
+            <pubDate>Fri, 10 Jul 2026 20:45:42 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.40</link>
+            <sparkle:version>202607102100</sparkle:version>
+            <sparkle:shortVersionString>1.1.40</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac-1.1.40.zip" length="40251689" type="application/octet-stream" sparkle:edSignature="kdFmWWaavqmXQylg507SQnf/beD2Lze2lpweuPeSOooXa0x/ule5MJY8otXY0DWiLhyNEswSmUNWY9HuiFmHDA=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac202607102100-202607102035.delta" sparkle:deltaFrom="202607102035" length="6866" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xDVHcw6BHIP7HlqCmQRTRMx/vfzWXD1bzQntiyah8Ftg5CpnwZMA0KUhRjR7EFmVSRxYO1PhAv2nJBO0L28KDw=="/>
