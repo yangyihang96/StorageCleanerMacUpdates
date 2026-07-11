@@ -3,6 +3,63 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.45</title>
+            <pubDate>Sat, 11 Jul 2026 16:37:08 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.45</link>
+            <sparkle:version>202607111449</sparkle:version>
+            <sparkle:shortVersionString>1.1.45</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
+
+版本：1.1.45
+构建：由发布脚本生成
+
+建议发送：
+1. StorageCleanerMac.dmg
+2. StorageCleanerMac.zip（备用）
+
+中文文件名版本也会同步生成：
+1. 存储清理助手.dmg
+2. 存储清理助手.zip
+
+本版重点：
+- 主窗口、侧栏与菜单栏小窗改用同一套稳定环境背景，不再随功能页面切换整窗颜色；深色模式也不会透出桌面壁纸造成割裂。
+- 侧栏默认展开应用名称、清理、文件整理及五个工具箱入口；右上角按钮可一键切换成紧凑图标模式，窗口空间可由用户自行取舍。
+- 工具箱移除顶部重复的分段导航，开机程序、内存、能耗、卸载和程序升级直接由侧栏切换，各工具页统一使用同一页头和内容节奏。
+- 智能体检首页改为居中的单一任务流；功能性健康仪表替代悬浮 App 图标，扫描前、扫描中和结果页使用连续的仪表语言，不再像界面中额外放了一张图片。
+- 扫描动画继续使用空闲暂停的原生 60fps 时间轴，并保留“减少动态效果”支持；仪表刻度、进度弧和状态徽标只在扫描时更新。
+- 扫描结果卡的自适应阈值优化到最小窗口仍可保持双列，1160 x 708、980 x 680、展开侧栏和紧凑侧栏均完成实机检查。
+- 菜单栏小窗沿用统一环境背景、语义色和统一字号；1 秒最快刷新、同应用进程合并、只显示可退出应用和网络上下行一致排版保持不变。
+- Sparkle 自动更新链路继续使用公开签名 feed、EdDSA 校验、原子替换和自动重启；默认每 6 小时检查。
+
+验证结果：
+- ./script/test.sh 通过：266 个测试，0 失败（默认跳过 1 个需显式启用的实机能耗采样测试）。
+- Instruments SwiftUI 模板验证：空闲状态无持续 SwiftUI 更新或动画帧；扫描录制无 250ms 以上卡死，持续动画阶段保持稳定刷新。
+- ./script/build_and_run.sh --verify 通过。
+- App bundle 会继续通过 codesign 校验。
+- DMG 会继续通过 hdiutil verify 校验。
+- DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
+
+当前限制：
+- Sparkle 更新包已使用独立 EdDSA 签名，但当前 App 仍是 Apple Development 或本机可用签名，不是 Developer ID 公证版本。
+- 朋友电脑如果提示“无法验证开发者”或“文件已损坏”，通常是 Gatekeeper 拦截未公证 App，不代表 DMG 或 ZIP 真坏。
+
+朋友打开方式：
+1. 打开 DMG，把 App 拖到 Applications。
+2. 如果提示无法验证开发者，在 Applications 里 Control + 点击 App，选择“打开”。
+3. 如果仍提示文件损坏，在终端运行：
+   xattr -dr com.apple.quarantine /Applications/存储清理助手.app
+4. 后续继续从 /Applications/存储清理助手.app 打开；不要反复从 DMG、下载目录或不同副本启动，否则 macOS 可能把它当成新 App，再次要求确认文件访问权限。
+
+要做到双击即开：
+1. 安装 Apple Developer Program 的 Developer ID Application 证书。
+2. 配置 notarytool 凭据。
+3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.45/StorageCleanerMac-1.1.45.zip" length="40551643" type="application/octet-stream" sparkle:edSignature="8jX03OuRCeHAaDxurdf3o61Q7ujeobO5vlQ57kEQ2u52q2nP/XzV+4Q16me1RMtfTci4/mmUbYQluNNB3nzDBQ=="/>
+        </item>
+        <item>
             <title>1.1.44</title>
             <pubDate>Sat, 11 Jul 2026 12:44:57 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.44</link>
