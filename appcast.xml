@@ -3,6 +3,64 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.44</title>
+            <pubDate>Sat, 11 Jul 2026 12:44:57 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.44</link>
+            <sparkle:version>202607111226</sparkle:version>
+            <sparkle:shortVersionString>1.1.44</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
+
+版本：1.1.44
+构建：由发布脚本生成
+
+建议发送：
+1. StorageCleanerMac.dmg
+2. StorageCleanerMac.zip（备用）
+
+中文文件名版本也会同步生成：
+1. 存储清理助手.dmg
+2. 存储清理助手.zip
+
+本版重点：
+- 主导航收敛为智能体检、清理、文件整理和工具箱，并改为紧凑图标导航轨，悬停可查看名称和当前状态。
+- 可自动清理与开发缓存合并到“清理”工作区；大文件与重复文件合并到“文件整理”工作区，内部使用标签切换，每项的扫描、复核和清理动作仍保留。
+- 工具箱默认展开，开机程序、内存、能耗、卸载和程序升级保留五个直接入口，也可手动收起。
+- 智能体检页改为与整窗环境背景相连的无边框任务区，不再使用像外置图片的深色大卡片；扫描完成后用稳定 2 x 2 结果网格展示四项可操作结果，避免窄窗口裁切。
+- 智能体检与任务扫描动画改为原生 60fps 时间轴，空闲时暂停刷新；扫描页只让中心主体柔和入场，组合精密轨道高光、主体微浮动、徽标呼吸和弹性按压，避免整页交叉动画拖慢首帧；开启“减少动态效果”时自动退回静态。
+- 结果卡在没有可处理内容时显示“已清爽”或“无候选”，不再显示 `0 B + 查看`也不接受点击；重复文件仍保留首次扫描入口。
+- 主窗口与菜单栏小窗使用按模块变化的多色环境背景；小窗的 CPU、GPU、内存、温度、风扇和网络信息进一步压缩，网络上下行使用完全一致的字号、字重和颜色。
+- 小窗保持 1 秒最快刷新、同一应用进程合并和只显示可退出应用；主窗口完成 1160 x 708 和 980 x 708 实机排版检查。
+- Sparkle 自动更新链路继续使用公开签名 feed、EdDSA 校验、原子替换和自动重启；默认每 6 小时检查。
+
+验证结果：
+- ./script/test.sh 通过：266 个测试，0 失败（默认跳过 1 个需显式启用的实机能耗采样测试）。
+- Instruments SwiftUI 模板验证：空闲状态无持续 SwiftUI 更新或动画帧；扫描录制无 250ms 以上卡死，持续动画阶段保持稳定刷新。
+- ./script/build_and_run.sh --verify 通过。
+- App bundle 会继续通过 codesign 校验。
+- DMG 会继续通过 hdiutil verify 校验。
+- DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
+
+当前限制：
+- Sparkle 更新包已使用独立 EdDSA 签名，但当前 App 仍是 Apple Development 或本机可用签名，不是 Developer ID 公证版本。
+- 朋友电脑如果提示“无法验证开发者”或“文件已损坏”，通常是 Gatekeeper 拦截未公证 App，不代表 DMG 或 ZIP 真坏。
+
+朋友打开方式：
+1. 打开 DMG，把 App 拖到 Applications。
+2. 如果提示无法验证开发者，在 Applications 里 Control + 点击 App，选择“打开”。
+3. 如果仍提示文件损坏，在终端运行：
+   xattr -dr com.apple.quarantine /Applications/存储清理助手.app
+4. 后续继续从 /Applications/存储清理助手.app 打开；不要反复从 DMG、下载目录或不同副本启动，否则 macOS 可能把它当成新 App，再次要求确认文件访问权限。
+
+要做到双击即开：
+1. 安装 Apple Developer Program 的 Developer ID Application 证书。
+2. 配置 notarytool 凭据。
+3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.44/StorageCleanerMac-1.1.44.zip" length="40584529" type="application/octet-stream" sparkle:edSignature="IicXi005xqmeHp0aILU83jQOT1P9rN/reFcLyCV2VNuoGn/NEjK7ld7e92YW2LrxtgPT9R+4pmkSY74MmPS1AQ=="/>
+        </item>
+        <item>
             <title>1.1.43</title>
             <pubDate>Sat, 11 Jul 2026 02:27:43 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.43</link>
@@ -115,29 +173,6 @@
                 <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.41/StorageCleanerMac202607102150-202607102100.delta" sparkle:deltaFrom="202607102100" length="613070" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EUsNwg9p3OMgxfcpXNi6GxvbyYiHqh4iAwO3GNgODP3wZMlTye4FNmq0+f4wIS4fYPmUICI3D3ZJPkY4Sk4kDQ=="/>
                 <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.41/StorageCleanerMac202607102150-202607102035.delta" sparkle:deltaFrom="202607102035" length="612794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="H+ScGArcScxp2wXsy/HXCBY3qZ+d6eEsxsaOx8Gd6jJtmlhpYEACIO/mcC1og3w1QIxhkholIhRwYKOhWY0kCg=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.1.40</title>
-            <pubDate>Fri, 10 Jul 2026 20:45:42 +1000</pubDate>
-            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.40</link>
-            <sparkle:version>202607102100</sparkle:version>
-            <sparkle:shortVersionString>1.1.40</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac-1.1.40.zip" length="40251689" type="application/octet-stream" sparkle:edSignature="kdFmWWaavqmXQylg507SQnf/beD2Lze2lpweuPeSOooXa0x/ule5MJY8otXY0DWiLhyNEswSmUNWY9HuiFmHDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.40/StorageCleanerMac202607102100-202607102035.delta" sparkle:deltaFrom="202607102035" length="6866" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xDVHcw6BHIP7HlqCmQRTRMx/vfzWXD1bzQntiyah8Ftg5CpnwZMA0KUhRjR7EFmVSRxYO1PhAv2nJBO0L28KDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.1.39</title>
-            <pubDate>Fri, 10 Jul 2026 20:33:32 +1000</pubDate>
-            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.39</link>
-            <sparkle:version>202607102035</sparkle:version>
-            <sparkle:shortVersionString>1.1.39</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.39/StorageCleanerMac-1.1.39.zip" length="40251698" type="application/octet-stream" sparkle:edSignature="DvY7WtvEPv8rHhjhm3ZLtf7weDvyJPbWpnyhpqJNl2kFTrXp2uL9kvseDwwUaxpTgE3okBhayrSFTDCyW1Y1CQ=="/>
         </item>
     </channel>
 </rss>
