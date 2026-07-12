@@ -3,6 +3,90 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.51</title>
+            <pubDate>Sun, 12 Jul 2026 18:20:47 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.51</link>
+            <sparkle:version>202607121737</sparkle:version>
+            <sparkle:shortVersionString>1.1.51</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.1.51
+
+本版重点：
+- 菜单栏新增约 284 × 24 点的横向实时状态条，常驻显示 CPU、GPU、MEM、SEN、RPM 与双行网络上下行。
+- 所有数值使用统一字号、字重、主文字颜色和等宽数字；上传与下载不再使用不同颜色。
+- GPU、芯片温度或风扇不可读取时自动收起对应列，不显示“不可用”。
+- 横条使用原生 NSStatusItem 与单张 AppKit 模板图渲染，点击后继续打开“清理释放 / 系统状态”双标签弹窗。
+- 1 秒刷新保持不变；后台内存百分比改用 Mach 轻量快照，完整进程扫描只在打开弹窗或手动刷新时运行。
+- 从弹窗进入扫描、清理、大文件或主窗口时会先收起弹窗，不再残留在主窗口后面。
+
+验证结果：
+- 271 个测试通过，0 失败，1 个环境依赖测试跳过。
+- 中文菜单、设置窗口、主窗口恢复、Sparkle 配置、DMG/ZIP 与严格 codesign 均已验证。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.51/StorageCleanerMac-1.1.51.zip" length="40640126" type="application/octet-stream" sparkle:edSignature="bQsURIJTspaDxqUTJWo0TbwkauUerOyUBF02fnVRSar8rvnXqRpX8l8qAHhKUMsqn7SV8MQLwiQMI1AsPknxBg=="/>
+        </item>
+        <item>
+            <title>1.1.50</title>
+            <pubDate>Sun, 12 Jul 2026 16:27:21 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.50</link>
+            <sparkle:version>202607121551</sparkle:version>
+            <sparkle:shortVersionString>1.1.50</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
+
+版本：1.1.50
+构建：由发布脚本生成
+
+建议发送：
+1. StorageCleanerMac.dmg
+2. StorageCleanerMac.zip（备用）
+
+中文文件名版本也会同步生成：
+1. 存储清理助手.dmg
+2. 存储清理助手.zip
+
+本版重点：
+- 小窗按参考图重构为“清理释放 / 系统状态”双标签纵向面板，宽度固定为 360 点，切换时保持稳定边界和连续表面。
+- 系统页前三项展示芯片温度、风扇转速和磁盘占用，下方显示真实磁盘已用/总容量、网络上下行、曲线以及 CPU/GPU/内存。
+- 网络快照新增结构化上下行字节率；曲线只使用最近 30 个真实采样点，不解析界面字符串，也不生成模拟数据。
+- 下载与上传数值复用同一个 15 点数值组件，字号、字重和主文字颜色完全一致；蓝色和薄荷色只用于区分两条曲线。
+- 风扇传感器不可读时自动替换为内存占用，不再把“不可用”放在主指标位；有风扇数据时仍显示实时只读 AppleSMC 转速。
+- 清理页展示可安全清理容量、最多两个真实可清理分组，并提供扫描缓存与开发文件、查看大文件等可执行入口；没有当前结果时不伪造分类。
+- 底栏按参考图调整为设置、打开主窗口和暂停/继续刷新，刷新频率仍支持 1/2/5 秒。
+- 内存建议仍只显示实际可正常退出的 `.app`，相同应用进程继续合并并显示应用图标；摄像头、麦克风等无法由本软件处理的状态没有加入小窗。
+- Sparkle 自动更新链路继续使用公开签名 feed、EdDSA 校验、原子替换和自动重启；默认每 6 小时检查。
+
+验证结果：
+- ./script/test.sh 通过：269 个测试，0 失败（实机传感器和能耗采样测试会按当前硬件能力跳过）。
+- 双标签、实时网络曲线、较长网络数值、清理入口和精简设置菜单均完成实机截图检查，无截断或重叠。
+- ./script/build_and_run.sh --verify 通过。
+- App bundle 会继续通过 codesign 校验。
+- DMG 会继续通过 hdiutil verify 校验。
+- DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
+
+当前限制：
+- Sparkle 更新包已使用独立 EdDSA 签名，但当前 App 仍是 Apple Development 或本机可用签名，不是 Developer ID 公证版本。
+- 朋友电脑如果提示“无法验证开发者”或“文件已损坏”，通常是 Gatekeeper 拦截未公证 App，不代表 DMG 或 ZIP 真坏。
+
+朋友打开方式：
+1. 打开 DMG，把 App 拖到 Applications。
+2. 如果提示无法验证开发者，在 Applications 里 Control + 点击 App，选择“打开”。
+3. 如果仍提示文件损坏，在终端运行：
+   xattr -dr com.apple.quarantine /Applications/存储清理助手.app
+4. 后续继续从 /Applications/存储清理助手.app 打开；不要反复从 DMG、下载目录或不同副本启动，否则 macOS 可能把它当成新 App，再次要求确认文件访问权限。
+
+要做到双击即开：
+1. 安装 Apple Developer Program 的 Developer ID Application 证书。
+2. 配置 notarytool 凭据。
+3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.50/StorageCleanerMac-1.1.50.zip" length="40613172" type="application/octet-stream" sparkle:edSignature="79N2IFU9A5dirpCDc+FOVSA3irjPdqHIOTk2gvhcuVzJP3N0OIpVL4nuY36+BAGxUX95sXuJyfaRnYeC7c/fAg=="/>
+        </item>
+        <item>
             <title>1.1.49</title>
             <pubDate>Sun, 12 Jul 2026 13:54:16 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.49</link>
