@@ -3,6 +3,63 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.49</title>
+            <pubDate>Sun, 12 Jul 2026 13:54:16 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.49</link>
+            <sparkle:version>202607121332</sparkle:version>
+            <sparkle:shortVersionString>1.1.49</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 发布说明
+
+版本：1.1.49
+构建：由发布脚本生成
+
+建议发送：
+1. StorageCleanerMac.dmg
+2. StorageCleanerMac.zip（备用）
+
+中文文件名版本也会同步生成：
+1. 存储清理助手.dmg
+2. 存储清理助手.zip
+
+本版重点：
+- 小窗参考腾讯柠檬的连续面板结构，移除状态板、建议区和底部操作之间的多层卡片边界，六项状态与操作现在位于同一完整表面。
+- 右上角独立电脑图块改为 SwiftUI 原生健康环；动画只在小窗出现时运行 0.55 秒，不使用持续时间轴，不影响每秒实时刷新。
+- 正常状态图标统一使用同一强调色，只有 CPU/GPU 高占用、内存压力和芯片高温等真实异常才使用橙色或红色。
+- 删除“这台 Mac”等无操作价值的说明文字，保留 Mac 状态、刷新频率、六项真实数值和一条可执行建议。
+- 六项标题、图标、数值基线和单元高度继续统一；网络下载与上传复用同一个 15 点数值组件，字号、字重和主文字颜色完全相同。
+- 保留 1 秒最快刷新、传感器分级采样、内存应用快照节流和无数字过渡动画，避免小窗自身制造持续 CPU 开销。
+- 内存建议仍只显示实际可正常退出的 `.app`，相同应用进程继续合并并显示应用图标。
+- Sparkle 自动更新链路继续使用公开签名 feed、EdDSA 校验、原子替换和自动重启；默认每 6 小时检查。
+
+验证结果：
+- ./script/test.sh 通过：268 个测试，0 失败（默认跳过 1 个需显式启用的实机能耗采样测试）。
+- 浅色、深色、六项较长网络数值和精简设置菜单均完成实机截图检查，无截断或重叠。
+- ./script/build_and_run.sh --verify 通过。
+- App bundle 会继续通过 codesign 校验。
+- DMG 会继续通过 hdiutil verify 校验。
+- DMG/ZIP 内会继续包含首次打开说明和 THIRD_PARTY_NOTICES.md。
+
+当前限制：
+- Sparkle 更新包已使用独立 EdDSA 签名，但当前 App 仍是 Apple Development 或本机可用签名，不是 Developer ID 公证版本。
+- 朋友电脑如果提示“无法验证开发者”或“文件已损坏”，通常是 Gatekeeper 拦截未公证 App，不代表 DMG 或 ZIP 真坏。
+
+朋友打开方式：
+1. 打开 DMG，把 App 拖到 Applications。
+2. 如果提示无法验证开发者，在 Applications 里 Control + 点击 App，选择“打开”。
+3. 如果仍提示文件损坏，在终端运行：
+   xattr -dr com.apple.quarantine /Applications/存储清理助手.app
+4. 后续继续从 /Applications/存储清理助手.app 打开；不要反复从 DMG、下载目录或不同副本启动，否则 macOS 可能把它当成新 App，再次要求确认文件访问权限。
+
+要做到双击即开：
+1. 安装 Apple Developer Program 的 Developer ID Application 证书。
+2. 配置 notarytool 凭据。
+3. 运行 script/configure_distribution.sh 自动重新打包、公证和 staple。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.49/StorageCleanerMac-1.1.49.zip" length="40529700" type="application/octet-stream" sparkle:edSignature="Ic8cjF9nnbq4L+35QNiakTaK5bVShbl7kJKcxJ7sCQ7atG90W4v8UtHGWqkKXGwxsq6iByC7UKilCiPyboLGAA=="/>
+        </item>
+        <item>
             <title>1.1.48</title>
             <pubDate>Sun, 12 Jul 2026 03:20:29 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.48</link>
