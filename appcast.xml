@@ -3,6 +3,32 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.1.52</title>
+            <pubDate>Mon, 13 Jul 2026 09:20:44 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.52</link>
+            <sparkle:version>202607130856</sparkle:version>
+            <sparkle:shortVersionString>1.1.52</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.1.52
+
+本版重点：
+- 双标签菜单栏小窗从约 360 × 382 点压缩为约 360 × 300 点，清理页不再保留大段空白。
+- CPU、GPU、内存、芯片温度、风扇和磁盘收进同一两行网格，所有数值使用同一字号、字重、基线和等宽数字。
+- 不可读的 GPU、芯片温度或风扇会直接隐藏，不显示“不可用”或占位数值。
+- 网络下行/上行数值、箭头和最近 24 个采样点共用稳定的 mint/blue 方向配色。
+- 小窗打开时才创建 SwiftUI Hosting Controller，关闭后立即释放；隐藏主窗口后实测约 1.1%–2.0% CPU、85 MB 和 6 个线程。
+- 约 284 × 24 点的 AppKit 菜单栏横条、1 秒轻量刷新、安全清理入口与暂停/手动刷新保持不变。
+
+验证结果：
+- 271 个测试通过，0 失败，2 个环境依赖测试跳过。
+- 安装版系统页、清理页、传感器隐藏、性能回落、DMG/ZIP、SHA-256 和严格 codesign 均已验证。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.1.52/StorageCleanerMac-1.1.52.zip" length="40621866" type="application/octet-stream" sparkle:edSignature="hfQllpVR7YuaOnY+zWVc4BSoTmGhcuZRLEHVmoMDgZzOrkK7GiNk+SapWkwmGvkjgEgA3o9ZESLyf9QxrXJpCg=="/>
+        </item>
+        <item>
             <title>1.1.51</title>
             <pubDate>Sun, 12 Jul 2026 18:20:47 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.51</link>
