@@ -3,6 +3,33 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Mon, 13 Jul 2026 11:30:31 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.0</link>
+            <sparkle:version>202607131039</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.0
+
+本版重点：
+- 设置新增菜单栏小窗“简约版 / 复杂版”切换；简约版保留 360 × 300 点双标签，复杂版为约 430 × 560 点高密度面板。
+- 复杂版提供综合、处理器、内存、磁盘、网络、传感器、电源与耗电、清理八个模块，只展示真实可读或可操作数据。
+- CPU 新增用户态/系统态分解、1/5/15 分钟负载、运行时间和系统热状态；处理器页条件式显示真实 GPU 占用和趋势。
+- 内存页显示非重叠构成和可正常退出的高占用 `.app`；磁盘与清理页严格区分上次扫描摘要和当前可操作明细。
+- 电池使用 IOPowerSources 真实读取；应用耗电仅在用户点击“测量一次”时执行，不进入每秒常驻刷新。
+- 不可用的 GPU、温度、风扇或电池项自动隐藏；各模块展示自己的真实更新时间。
+
+验证结果：
+- 277 个测试执行，0 失败，2 个环境相关跳过。
+- 最终安装版干净常驻约 1.1%–1.6% CPU、85 MB、6 线程；复杂版打开时线程数不增加。
+- DMG/ZIP、SHA-256、Bundle ID、zh-Hans 和严格 codesign 已验证。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.0/StorageCleanerMac-1.2.0.zip" length="41145825" type="application/octet-stream" sparkle:edSignature="A5rLG2Ir8T2gqbPyugeZs48C3UdPaDS7Xey3AW5NA/FxsH7sktIcAUbuk3ohgEbBLF6deb+Ux9QnOub3PAKCDQ=="/>
+        </item>
+        <item>
             <title>1.1.52</title>
             <pubDate>Mon, 13 Jul 2026 09:20:44 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.1.52</link>
