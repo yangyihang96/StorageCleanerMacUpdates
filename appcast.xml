@@ -3,6 +3,34 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.1</title>
+            <pubDate>Tue, 14 Jul 2026 17:26:17 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.1</link>
+            <sparkle:version>202607141714</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.1
+
+本版重点：
+- 修复连续快速切换扫描、内存、能耗、启动项、卸载和更新页面时可能出现的高 CPU、窗口卡顿或短暂无响应。
+- 导航状态与大型扫描数据已经分离；内存分析按快照缓存，整页强制重建和叠加切换动画已移除。
+- 自动扫描、文件夹权限书签恢复、外部命令和传感器读取加入单次任务、超时恢复与迟到结果隔离。
+- GPU、温度和风扇连接失效时会退避重建，过期值自动隐藏，不会无限创建后台采样任务。
+- 应用卸载扫描扩大覆盖范围，并在结果受时间或数量限制时明确提示，不再把部分扫描误报为完整空结果。
+- “精简 / 详细”菜单栏小窗选项已完成真实点击验证，等宽数字基线和网络方向颜色保持一致。
+- 构建链已验证 Xcode 26.6、macOS 26.5 SDK、arm64 和最低 macOS 14 部署目标。
+
+验证结果：
+- 342 个测试执行，0 失败，1 个环境相关跳过。
+- 80 次跨页面快速切换后仍可正常响应，没有新增 Spin、Hang 或 CPU Resource 报告。
+- build_and_run.sh --verify、DMG/ZIP、SHA-256、hdiutil verify 和严格 codesign 均通过。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.1/StorageCleanerMac-1.2.1.zip" length="34550936" type="application/octet-stream" sparkle:edSignature="6uzarSK07onqX8NqkTf/MOfbkFgGuzBhYr+vqfu5jbz5aj9N7Dcp2Vvfyd2WreyiL3gxfiLxQea94X+MT0QCDA=="/>
+        </item>
+        <item>
             <title>1.2.0</title>
             <pubDate>Mon, 13 Jul 2026 11:30:31 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.0</link>
