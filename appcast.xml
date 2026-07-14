@@ -3,6 +3,33 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.5</title>
+            <pubDate>Wed, 15 Jul 2026 02:52:34 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.5</link>
+            <sparkle:version>202607150036</sparkle:version>
+            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.5
+
+本版重点：
+- 删除与 macOS 原生“隐藏边栏”重复的自定义紧凑侧栏按钮，主窗口只保留一个清晰入口。
+- “显示”菜单新增仅在主窗口可用的“显示或隐藏边栏”，并支持 Control-Command-S。
+- 合并应用更新、卸载扫描、智能扫描中的重复按钮与隐藏整行点击区；批量更新仍先预览、再由用户确认。
+- 菜单栏小窗“精简 / 详细”保持同层直接选项，真实完成详细→精简→详细往返点击。
+- 详细面板继续显示可读取的风扇 RPM，以及处理器核心簇频率和标称状态电压；不可可靠读取的数据会隐藏。
+- 更新只使用无需登录的公开签名 Sparkle feed，不再依赖私有源码仓库 API 或 GitHub CLI。
+
+验证结果：
+- 363 个测试执行，0 失败，1 个环境相关跳过。
+- build_and_run.sh --verify、最终 ZIP/DMG、SHA-256、严格 codesign 与真实界面检查均通过。
+- Release 包隐藏主窗口后约 0.3%～1.2% CPU、约 150 MB RSS、4～5 个线程。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.5/StorageCleanerMac-1.2.5.zip" length="32447355" type="application/octet-stream" sparkle:edSignature="p6HOtjWFPB/6R+7QJt72NlJSXGQfpnK41h/d41aUlrfGXl+F5g1Ua5/x7HOSUTrnGsM33OaDReSrXn4m/mtBBw=="/>
+        </item>
+        <item>
             <title>1.2.4</title>
             <pubDate>Tue, 14 Jul 2026 23:20:45 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.4</link>
