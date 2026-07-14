@@ -3,6 +3,31 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.4</title>
+            <pubDate>Tue, 14 Jul 2026 23:20:45 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.4</link>
+            <sparkle:version>202607142305</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.4
+
+本版重点：
+- 修复菜单栏小窗齿轮菜单中，鼠标移向“精简/详细”时面板模式子菜单自动消失、无法点击的问题。
+- 两种模式改为齿轮菜单内的直接选项，不再依赖容易失稳的第二级子菜单。
+- 模式选择会在菜单跟踪结束、当前小窗关闭后再持久化和替换面板根视图，避免 SwiftUI/AppKit 自行销毁正在响应鼠标的菜单。
+- 快速关闭后立即重开会先提交待切换模式；当前模式保留勾选但不再置灰。
+- 没有增加常驻计时器、进程枚举或传感器读取，菜单栏沿用原有轻量刷新路径。
+
+验证结果：
+- 361 个测试执行，0 失败，1 个环境相关跳过。
+- 两个面板模式专项测试、build_and_run.sh --verify、最终 ZIP/DMG、SHA-256 和严格 codesign 均通过。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.4/StorageCleanerMac-1.2.4.zip" length="34650609" type="application/octet-stream" sparkle:edSignature="YOIk7TiDP3QzKQ12fXc2Pqjy42/tbAQnyoIu/yVnKp4GojiVYt/cDDY6MK0FAK4xQcqwJnRqQP78lZqAzkdMAw=="/>
+        </item>
+        <item>
             <title>1.2.3</title>
             <pubDate>Tue, 14 Jul 2026 21:03:04 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.3</link>
