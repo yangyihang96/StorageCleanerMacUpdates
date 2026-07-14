@@ -3,6 +3,32 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.3</title>
+            <pubDate>Tue, 14 Jul 2026 21:03:04 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.3</link>
+            <sparkle:version>202607142051</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.3
+
+本版重点：
+- 复杂版“处理器”页新增 Apple 芯片型号、核心拓扑，以及各核心簇的平均有效频率和状态电压。
+- 频率根据 P-state 驻留时间计算；电压是对应固件状态的标称值，不冒充直接测得的物理电压。
+- 核心簇没有活动状态时明确显示“休眠”，不会伪造最低频率或最低电压。
+- 动态采样仅在处理器页可见时执行，每 2 秒至多一次；不使用 sudo、子进程或新增常驻计时器。
+- 对 CPU 通道、状态顺序、DVFS 表、拓扑和数值范围进行严格校验；接口不匹配时隐藏动态值。
+
+验证结果：
+- 359 个测试执行，0 失败，1 个环境相关跳过。
+- macOS 27.0 / Apple M5 Pro 真机验证了 18 核拓扑、三个核心簇、活动值与休眠值。
+- build_and_run.sh --verify、最终 ZIP/DMG、SHA-256 和严格 codesign 均通过。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.3/StorageCleanerMac-1.2.3.zip" length="34645719" type="application/octet-stream" sparkle:edSignature="hVqzgxbyforLTpyAUyZ9UJdKlW9MGCvbraIaNNjndUecgdllGL8ekzkW4lZVTSWWuW/8EbapqpOBkKnK8HyfDA=="/>
+        </item>
+        <item>
             <title>1.2.2</title>
             <pubDate>Tue, 14 Jul 2026 18:44:04 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.2</link>
