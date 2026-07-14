@@ -3,6 +3,33 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.2.2</title>
+            <pubDate>Tue, 14 Jul 2026 18:44:04 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.2</link>
+            <sparkle:version>202607141835</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.2.2
+
+本版重点：
+- 复杂版菜单栏小窗的“传感器”页面现在明确显示风扇转速、当前 RPM 和读取到的风扇数量。
+- 风扇停转时会正确显示 0 RPM，不再被误判为传感器不可用。
+- 无风扇、读取失败、数据异常或仅能读取部分风扇时继续自动隐藏，避免显示误导性的平均值。
+- AppleSMC 读取同时检查 IOKit 传输结果和 SMC 命令结果，失败响应不会被当成真实零转速。
+- 修正传感器刷新说明：GPU 约每 2 秒更新，温度和风扇约每 15 秒更新。
+- 沿用现有 single-flight 后台采样和缓存，没有增加新的常驻计时器或额外进程扫描。
+
+验证结果：
+- 345 个测试执行，0 失败，1 个环境相关跳过。
+- build_and_run.sh --verify、最终归档、SHA-256、hdiutil verify 和严格 codesign 均通过。
+- 复杂版传感器页面已完成真实运行截图与性能复核。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 仍可能受到 Gatekeeper 拦截。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.2.2/StorageCleanerMac-1.2.2.zip" length="34550877" type="application/octet-stream" sparkle:edSignature="c9PZFbZOMmfS0eSeYq7vO0fD3kmzql6WDPeG/MzZIw/qZGbbEX1s6Otk1TtDrYTGc2gXl4RchK+YJgyESlUPCQ=="/>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Tue, 14 Jul 2026 17:26:17 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.2.1</link>
