@@ -3,6 +3,34 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.4.0</title>
+            <pubDate>Thu, 16 Jul 2026 02:00:01 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.4.0</link>
+            <sparkle:version>202607152021</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.4.0
+
+本版重点：
+- 新增电脑健康中心，集中显示磁盘 SMART/TRIM/FileVault/容量趋势、Time Machine、稳定性、电池健康与电源状态；所有较重探测均由用户手动触发。
+- 新增网络质量测试，确认后才调用 macOS 原生 networkQuality，并支持取消、超时和迟到结果隔离。
+- 新增浏览器隐私痕迹安全复核；只读扫描 Safari、Chrome、Edge、Firefox 的快照，域名默认遮罩，敏感分类默认关闭，删除统一引导至浏览器原生设置。
+- 电池管理采用安全引导模式，只读取可靠状态并打开 macOS 原生设置；不会写 pmset、改充电控制器或伪装硬件控制。
+- 菜单栏详细模式扩展为综合、处理器、内存、磁盘、网络、传感器、电源与清理八个模块；传感器逐个显示真实风扇 RPM，处理器显示可验证的核心簇频率与状态电压。
+- 修复精简/详细选项鼠标移入后消失的问题，合并重复按钮和侧栏入口，并修复 APFS 容量误判、后台任务取消及长列表图标内存增长。
+- 能耗与卸载列表改为按需创建，应用图标统一缩放并按像素成本缓存；主窗口隐藏后的实测约 0.9%～1.6% CPU、87 MB、4 个线程。
+
+验证结果：
+- 699 个测试，0 失败，1 个默认关闭的实时能耗测试跳过；该测试单独启用后通过。
+- Xcode 26.6 / macOS 26.5 SDK 验证构建与运行，同一源码使用 Xcode 27 / macOS 27 SDK 完整测试通过。
+- 最终 ZIP/DMG、SHA-256、Sparkle EdDSA、严格 codesign、arm64、中文包名和唯一安装副本均已验证。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.4.0/StorageCleanerMac-1.4.0.zip" length="33194705" type="application/octet-stream" sparkle:edSignature="6NPr9tx2I6KKKgXb89Tn+HAUhzcQy3bjd66qrI9TCPf+Xm62TcMcZT7EF9pnacIxtA66SGIlE8139vjl8OmpBA=="/>
+        </item>
+        <item>
             <title>1.3.1</title>
             <pubDate>Wed, 15 Jul 2026 08:48:27 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.3.1</link>
