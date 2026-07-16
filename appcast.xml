@@ -3,6 +3,32 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.5.2</title>
+            <pubDate>Fri, 17 Jul 2026 02:14:20 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.5.2</link>
+            <sparkle:version>202607170141</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.5.2
+
+本版重点：
+- 跑分页改为“Mac 综合性能指数”，使用统一冻结基准比较不同 Apple 芯片；M5 Pro 为 1000 分，不是同型号排名。
+- 基准分固定为唯一的 1000 分锚点，不会给每种机型各自归一到 1000；快速与完整模式都使用经过哈希校验的 M5 Pro 冻结基线。
+- 精简跑分说明和结果卡片，同时保留模式、耗时、原始值、波动、样本与可比性边界。
+- 过滤超过当前时间 5 分钟的异常跑分记录，避免测试夹具遮挡真实历史。
+- macOS 26 及以上统一使用系统原生玻璃效果；旧系统使用原生材质，并遵循“降低透明度”设置。
+
+验证结果：
+- 1,099 个自动化测试，0 失败，2 个按设计跳过。
+- Xcode 26.6 / macOS 26.5 SDK、arm64、最低 macOS 14.0、严格 codesign、DMG/ZIP、SHA-256 与 Sparkle EdDSA 均通过。
+- 正式安装版显示真实 Apple M5 Pro / 938 记录；菜单栏常驻短时采样约 0～1.1% CPU、79 MB、6 个线程。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.5.2/StorageCleanerMac-1.5.2.zip" length="34280607" type="application/octet-stream" sparkle:edSignature="YlycuAS6gM/HspR7a0NIF8LdzJeAIQH4LwuLDrnm7Wf6qk0cGeqVyeL046nSmeOxHsIAnFsfQZWnGCv/VC3zBA=="/>
+        </item>
+        <item>
             <title>1.5.1</title>
             <pubDate>Fri, 17 Jul 2026 01:17:27 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.5.1</link>
