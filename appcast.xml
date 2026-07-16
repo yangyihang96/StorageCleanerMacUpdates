@@ -3,6 +3,32 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.5.1</title>
+            <pubDate>Fri, 17 Jul 2026 01:17:27 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.5.1</link>
+            <sparkle:version>202607170050</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.5.1
+
+本版重点：
+- 修复网络测速完整结果在退出应用后丢失的问题；现在重新启动后会恢复最近一次结果，并同步到电脑健康页。
+- 本地只保存下载、上传、响应性、延迟、接口、方法版本、流量总量和测试时间，不保存服务器地址或 IP。
+- 持久化文件使用 0600 权限，并拒绝损坏、超大、异常数值、未来时间和符号链接数据；旧结果不会覆盖新结果。
+- 修正补丁版发布时的跑分校准门：冻结校准来源保持 1.5.0，工作负载源码指纹未变化才允许复用基线。
+- 再次核对菜单栏小窗当前 Space 会话、精简/详细同层选择、处理器频率/状态电压和逐风扇 RPM 路径。
+
+验证结果：
+- 1,095 个自动化测试，0 失败，2 个环境相关跳过。
+- Xcode 26.6 / macOS 26.5 SDK、arm64、最低 macOS 14.0、严格 codesign、DMG/ZIP、SHA-256 与 Sparkle EdDSA 均通过。
+- 1.5.1 真机测速后正常退出并重启，完整结果仍可恢复；隐藏主窗口后 5 次采样 CPU 0.1%～0.2%、约 195 MB RSS、6 个线程。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.5.1/StorageCleanerMac-1.5.1.zip" length="34280092" type="application/octet-stream" sparkle:edSignature="3NdlzD0/ShmizcErm2lxE+EmJsXd7jJ6BJyPiLi0LLAp7kJ5P2EPn5X6jaWZYiTLefP/1CdNxXL963r8iGLkDg=="/>
+        </item>
+        <item>
             <title>1.5.0</title>
             <pubDate>Fri, 17 Jul 2026 00:05:44 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.5.0</link>
