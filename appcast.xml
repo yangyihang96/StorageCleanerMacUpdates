@@ -3,6 +3,34 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Fri, 17 Jul 2026 00:05:44 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.5.0</link>
+            <sparkle:version>202607161945</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.5.0
+
+本版重点：
+- 新增统一电脑健康分、证据可信度、历史趋势与安全建议，磁盘、容量、电池、稳定性、备份和网络结果集中呈现。
+- 新增快速与完整 Mac 性能测试，覆盖 CPU、内存、Metal GPU 和磁盘，并提供电源、温度、空间、取消、超时和重任务互斥保护。
+- 修复菜单栏小窗“精简 / 详细”鼠标移入后消失或无法点击；模式选择固定在同一弹层会话中。
+- 详细小窗补齐处理器核心簇频率与状态电压、平均及逐风扇 RPM；不可可靠读取的数据继续自动隐藏。
+- 修复 macOS 26 上应用能耗实时采样缺失，以及安全清理页面上移、卸载/扫描超时、后台任务竞态和页面卡死风险。
+- 合并重复侧栏、刷新、权限和设置入口，只保留可操作、可清理或可安全关闭的内容。
+- 隐私痕迹清理继续使用安全引导：域名默认遮罩、只读扫描、逐项确认、浏览器原生删除入口。
+
+验证结果：
+- 稳定工具链和 Xcode 27 均执行 1,088 个测试，0 失败，2 个环境相关跳过；实时能耗采样单独启用后通过。
+- Xcode 26.6 / macOS 26.5 SDK、arm64、最低 macOS 14.0、严格 codesign、DMG/ZIP 与 SHA-256 均已验证。
+- 菜单栏常驻 55 秒实测平均 CPU 0.75%、峰值 2.2%、top 约 82 MB、4 个线程。
+
+当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.5.0/StorageCleanerMac-1.5.0.zip" length="34265789" type="application/octet-stream" sparkle:edSignature="DxCleRbIecVhvaDg8HgEuOU1h1NKaZJCW0RqT1dAcfVM2kzigCqkqelp1M+2mwWhIULbLxYyZFIwv98OvhQLBA=="/>
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Thu, 16 Jul 2026 02:00:01 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.4.0</link>
