@@ -3,6 +3,45 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.2</title>
+            <pubDate>Sat, 18 Jul 2026 09:25:54 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.2</link>
+            <sparkle:version>202607172016</sparkle:version>
+            <sparkle:shortVersionString>1.8.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.2
+
+本版重点：
+
+- 修复跑分页在 macOS 26 原生玻璃环境下滚动后文字穿过固定标题、相互覆盖的问题；长滚动区改用遵循系统“降低透明度”的安全材质层，其他页面仍保留原生玻璃效果。
+- 合并菜单栏极客面板里重复的指标、能耗行和导航按钮实现；主窗口、电脑健康、跑分、排行榜与菜单栏小窗继续复用同一套字号、间距、圆角、颜色和按钮层级。
+- Mac 六项性能指数升级为唯一的 Standard v6；界面不再提供“快速 / 完整”选择，旧 v3/v4 记录和冻结证据原样保留但不混排。
+- GPU 分项使用真实 Metal 3D 离屏渲染：每个样本固定 1920 × 1080、262,144 个实例、最多 180 帧预热和 600 帧正式计时，约处理 18.87 亿个三角形，并以 GPU 时间计算 Mtri/s。
+- v6 综合分使用公开权重的几何指数。内存容量占内存分项 25%；系统盘容量占磁盘读取和写入分项各 10%；容量影响使用平方根与严格上下限，不能替代真实性能。
+- 社区排行榜切换到统一 Standard v6：显示用户 ID（电脑名称）、处理器型号、六项总分、排名和测试时间。符合协议与环境门禁的有效成绩在跑分完成后自动上传，无需再次确认；失败时才出现重试入口。
+- 服务端不信任客户端总分，会校验版本、电源、热状态、样本数、CV、六项原始中位数、内存容量和系统盘容量，并使用同一冻结基准重新计算分数。
+- 不上传序列号、硬件 UUID、MAC 地址或系统账户名。用户可移除公开成绩，本机历史保持不变；社区硬件身份仍明确标注为未经验证。
+- 新增 raw-only 图形与媒体加速实测：Metal 光栅 3D、硬件光追、GPU FP16 张量和 H.264 硬件编解码分别显示原始中位数、CV 与硬件状态，不生成第二套综合分，也不上传排行榜。
+- 旧版 1.6.0 校准原始记录、冻结文档、发布资产和工作负载均未修改。
+
+验证范围：
+
+- 1,255 个应用自动化测试全部执行，0 失败；3 个重负载或硬件条件测试按设计跳过。覆盖单一模式隔离、Metal 3D、光追、GPU 张量、视频硬件路径、容量计分、自动上传、删除公开成绩、取消/超时、菜单栏交互和 UI 去重。
+- 排行榜 Worker 完成 TypeScript 类型检查、65 个自动化测试和依赖安全审计，0 失败、0 个已知漏洞；线上 D1 迁移和 Standard v6 健康/查询接口已验证。
+- v6 基准来自 M5 Pro 上两轮独立冷却会话共 8 次 Release 真实跑分；保留全部原始结果，并验证会话间冷却、组内/组间 CV、固定硬件、一次性护栏和源码指纹。
+- 真实界面验证覆盖跑分页滚动、最小窗口、浅色/深色、单一 Standard、自动上传状态、排行榜、菜单栏精简/详细/极客模式及其设置页。
+- 产品结构验证已通过 macOS 14.0 最低版本、macOS 26.5 SDK、arm64、严格 codesign、Sparkle 公开更新源/公钥和主窗口关闭后恢复。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.8.2.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.2/StorageCleanerMac-1.8.2.zip" length="35076138" type="application/octet-stream" sparkle:edSignature="46G+SzcWA4vBxp3f/AAgSu4c/M1YMI+gaawX8/3p31ct0Uu1zGVMTHE5vMM/HPKtStQaHzDq6aavz62gbfPKCQ=="/>
+        </item>
+        <item>
             <title>1.8.1</title>
             <pubDate>Fri, 17 Jul 2026 18:04:00 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.1</link>
