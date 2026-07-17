@@ -3,6 +3,43 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.7.0</title>
+            <pubDate>Fri, 17 Jul 2026 15:05:32 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.7.0</link>
+            <sparkle:version>202607171445</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.7.0
+
+本版重点：
+
+- Mac 综合性能指数页面新增社区跑分排行榜，快速与完整模式分别排名。
+- 排行榜显示排名、用户 ID、处理器型号、综合评分和跑分时间；用户 ID 默认使用电脑名称，上传前可以修改。
+- 跑分不会自动上传。只有符合当前 v3 工作负载和比较条件的有效成绩，才会显示上传入口，并要求用户确认公开字段。
+- 服务端按冻结的 M5 Pro v3 六项基准重新计算总分，不接受客户端自行决定的分数。
+- 上传数据不包含序列号、硬件 UUID、MAC 地址或账户名；安装标识只在服务端经过 HMAC 后保存。
+- 用户可删除自己的公开成绩，删除不会影响本地跑分历史。
+- 社区硬件身份无法完全验证，界面会明确标注“身份未验证”，避免把社区数据描述成受信任硬件认证。
+- 排行榜沿用电脑健康页的原生玻璃、标题、间距和按钮层级，没有增加新的侧边栏页面或重复模式切换按钮。
+
+验证结果：
+
+- 1,117 个应用自动化测试，0 失败，2 个按设计或环境条件跳过。
+- 排行榜服务端 11 个测试与 TypeScript 类型检查通过。
+- 优化版快速多核稳定采样回归通过；没有修改 v3 工作负载、冻结基线或 1.6.0 校准数据。
+- 真实主窗口已复核排行榜表格、窄窗口布局、刷新入口和无可上传成绩时的状态。
+- Cloudflare Worker 与 D1 使用独立生产服务；真实联网创建、读取、更新、删除和重复删除均已完成验收，临时记录已清理。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.7.0.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.7.0/StorageCleanerMac-1.7.0.zip" length="34449924" type="application/octet-stream" sparkle:edSignature="SjKyMAeXQamg+jAgKRZZprUe3eTYLXC6I2aldKIYHxt7eKsCW6fG7I++pONyRRpWlWv626AHoYxtyeQ5J7A5Cw=="/>
+        </item>
+        <item>
             <title>1.6.1</title>
             <pubDate>Fri, 17 Jul 2026 13:28:37 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.6.1</link>
