@@ -3,6 +3,39 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.7.1</title>
+            <pubDate>Fri, 17 Jul 2026 15:26:53 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.7.1</link>
+            <sparkle:version>202607171516</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.7.1
+
+本版重点：
+
+- 修复主窗口和设置窗口同时更新时，窗口玻璃配置可能重复写入 AppKit 属性并触发 SwiftUI KVO 崩溃的问题。
+- 窗口配置现在只在视图附着后合并执行；`isMovableByWindowBackground`、标题栏、背景和尺寸等属性仅在值实际变化时写入。
+- 新增窗口配置合并与幂等回归测试，覆盖连续 SwiftUI 更新不会重复执行同一轮窗口修改。
+- 保留 1.7.0 的社区跑分排行榜、显式上传确认、服务端重算、隐私字段限制和公开成绩删除能力。
+- 没有修改排行榜协议、Mac 综合性能指数 v3 工作负载、冻结基线或 1.6.0 校准数据。
+
+验证结果：
+
+- 1,119 个应用自动化测试，0 失败，2 个按设计或环境条件跳过。
+- 排行榜服务端 11 个测试与 TypeScript 类型检查通过。
+- 真实复现的 1.6.1 窗口崩溃已通过崩溃报告定位，热修复版主窗口、设置窗口和检查更新交互均完成回归。
+- Release 构建、严格 codesign、DMG/ZIP、SHA-256 与 Sparkle EdDSA 均已验证。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.7.1.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.7.1/StorageCleanerMac-1.7.1.zip" length="34449483" type="application/octet-stream" sparkle:edSignature="xPIHHW5cqpZYgnflEuFaOThD97m8lXK6uidqF88UjAPXJKs06Fk2Nafcn2eByK1DYdM2dCCJPHzBb0JL2DiyCw=="/>
+        </item>
+        <item>
             <title>1.7.0</title>
             <pubDate>Fri, 17 Jul 2026 15:05:32 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.7.0</link>
