@@ -2,7 +2,7 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>StorageCleanerMac</title>
-+        <item>
+        <item>
             <title>1.6.0</title>
             <pubDate>Fri, 17 Jul 2026 11:52:39 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.6.0</link>
