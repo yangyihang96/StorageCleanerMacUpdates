@@ -2,6 +2,42 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>StorageCleanerMac</title>
++        <item>
+            <title>1.6.0</title>
+            <pubDate>Fri, 17 Jul 2026 11:52:39 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.6.0</link>
+            <sparkle:version>202607170900</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.6.0
+
+本版重点：
+
+- 全新设计“Mac 综合性能指数”：处理器单核、处理器多核、Metal 图形、内存、磁盘读取、磁盘写入六项各自计分后直接相加，总分不再取平均；M5 Pro 冻结基准为六项各 1000 分、总计 6000 分。
+- 快速测试与完整测试使用真正不同的负载。快速模式缩短 CPU、内存和 256 MiB 磁盘工作量；完整模式扩大 CPU、内存和 768 MiB 磁盘工作量，适合更稳定的对比。
+- 每个组件使用多次子测试与稳健统计；磁盘使用三次持久化写入取中位数，并保留原始样本、波动、模式、耗时和工作负载指纹，避免单次系统抖动误导结果。
+- 使用两轮正式会话、共 16 次真实跑分校准 M5 Pro v3 冻结基线；校准数据、来源 Build、工作负载指纹与 SHA-256 一并纳入仓库，后续改动无法静默复用旧基线。
+- 跑分页重新压缩信息层级，六项分数与总分关系更清楚；历史记录按工作负载版本隔离，旧记录不会冒充当前可比结果。
+- 菜单栏详细小窗继续统一 macOS 原生毛玻璃层次；设置保持同层展开，“精简 / 详细”可直接往返点击，不再因鼠标移入选项而消失。
+- 处理器页按硬件可用性显示核心簇有效频率和状态电压；传感器页显示平均及逐风扇实时 RPM。系统没有可靠数据时自动隐藏，不制造估算值。
+- 修正若干刷新、取消、基准历史和系统监控边界，保持主窗口隐藏后的轻量常驻路径，并继续适配 macOS 26 原生材质和系统外观。
+
+验证结果：
+
+- 1,105 个自动化测试，0 失败，2 个按设计或环境条件跳过。
+- Xcode 26.6 / macOS 26.5 SDK、arm64、最低 macOS 14.0、Release 构建、严格 codesign、DMG/ZIP 和 SHA-256 全部通过。
+- 真实菜单栏详细小窗逐页检查通过：综合、处理器、内存、磁盘、网络、传感器、电源、清理与同层设置均可点击；精简/详细模式完成真实往返切换。
+- 主窗口隐藏后的连续采样约 0.8%～1.8% CPU、80～81 MB、4～5 个线程，未因新增玻璃层或跑分展示增加常驻重任务。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.6.0.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.6.0/StorageCleanerMac-1.6.0.zip" length="34280990" type="application/octet-stream" sparkle:edSignature="uR8R23CLNqaaIn9fTOQjFX/CRJudYqJTkKLCfS9zy738jG6a6Obi15KWIYCV9IhqHiCDNO3hl09pfDo2UXS8Bw=="/>
+        </item>
         <item>
             <title>1.5.3</title>
             <pubDate>Fri, 17 Jul 2026 07:54:32 +1000</pubDate>
