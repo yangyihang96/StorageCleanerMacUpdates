@@ -3,6 +3,41 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.0</title>
+            <pubDate>Fri, 17 Jul 2026 17:13:40 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.0</link>
+            <sparkle:version>202607171704</sparkle:version>
+            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.0
+
+本版重点：
+
+- 主窗口、电脑健康、跑分与排行榜、清理、文件整理、工具箱和设置统一为同一套 macOS 26 原生玻璃容器层级。
+- 全部主要按钮和分段选择器改为共享原生玻璃样式，移除页面内重复的实心按钮、扁平切换器和不一致的自定义主按钮外观。
+- 菜单栏精简/详细小窗继续使用轻量原生结构，并与主窗口共享字体、强调色、玻璃层级和“降低透明度”回退规则。
+- 重复文件首次扫描空状态补齐统一面板，标题操作、设置页和工具页的交互层级进一步收敛。
+- 新增 UI 一致性回归测试，阻止旧的 bordered、borderedProminent 和裸 segmented 样式重新进入主要页面。
+- 保留社区跑分排行榜、显式上传确认、服务端重算、隐私字段限制和公开成绩删除能力。
+- 没有修改排行榜协议、Mac 综合性能指数 v3 工作负载、冻结基线或 1.6.0 校准数据。
+
+验证结果：
+
+- 1,121 个应用自动化测试，0 失败，2 个按设计或环境条件跳过。
+- 真实主窗口、电脑健康、清理、文件整理、工具箱、设置和菜单栏小窗均已逐页复核。
+- 浅色、深色和“降低透明度”三种外观均完成真实界面检查；降低透明度时自动使用清晰的不透明系统背景。
+- Release 构建、严格 codesign、DMG/ZIP、SHA-256 与 Sparkle EdDSA 均已验证。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.8.0.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.0/StorageCleanerMac-1.8.0.zip" length="34438466" type="application/octet-stream" sparkle:edSignature="eCPscmYDIlA/7FdRnqO/XdJ4lZ4yujFu5uqKMA2TRqDQ+AP8z76Id1w6F2uFnveUgqwPFg/5AaLV7H1h6hfNCw=="/>
+        </item>
+        <item>
             <title>1.7.1</title>
             <pubDate>Fri, 17 Jul 2026 15:26:53 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.7.1</link>
