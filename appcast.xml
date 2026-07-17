@@ -3,6 +3,43 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.1</title>
+            <pubDate>Fri, 17 Jul 2026 18:04:00 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.1</link>
+            <sparkle:version>202607171800</sparkle:version>
+            <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.1
+
+本版重点：
+
+- 将“敏感隐私内容清理”重构为更直接的“浏览器隐私检查”，扫描前即说明读取内容与不读取内容。
+- Safari、Chrome、Microsoft Edge、Firefox 分别显示真实扫描状态，不再把权限受限、浏览器繁忙、超时、格式异常、未找到配置和部分结果合并成一句含糊提示。
+- 结果概览显示每个浏览器的域名数与下载记录数；悬停可查看已检查配置数和实际读取的历史记录数量。
+- 删除扫描前没有信息价值的“查看详情”按钮；只有确实得到域名结果后才显示“复核结果”。
+- 结果窗口改为内容自适应高度，不再出现权限提示占据巨大空白窗口的问题。
+- 历史记录、下载记录与网站数据按钮只打开浏览器原生页面，并明确提示“尚未删除任何内容”；最终删除仍由用户在浏览器内确认。
+- “可能敏感域名”选项仍默认关闭、仅对本次扫描生效，只在本机按域名规则标记，不上传也不保存分类结果。
+- 保留只读临时快照、完整网址不持久化、不写剪贴板、不直接改写浏览器数据库的安全边界。
+- 没有修改社区排行榜协议、Mac 综合性能指数 v3 工作负载、冻结基线或 1.6.0 校准数据。
+
+验证结果：
+
+- 1,123 个应用自动化测试，0 失败，2 个按设计或环境条件跳过。
+- 隐私相关 100 个专项测试全部通过，覆盖权限、取消、超时、繁忙数据库、格式异常、结果上限、浏览器原生路由和布局稳定性。
+- 真实开发版完成扫描前界面与权限受限结果复核：Safari、Chrome、Edge、Firefox 状态分别可见，无重复详情入口或空白大弹窗。
+- Release 构建、严格 codesign、DMG/ZIP、SHA-256 与 Sparkle EdDSA 均已验证。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.8.1.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.1/StorageCleanerMac-1.8.1.zip" length="34460005" type="application/octet-stream" sparkle:edSignature="aAvnPMWBZHd+el7I6+9SY9lWqi/TaI49vyPbVKnLh9LF4WjUcDoqD4lXysfk4cklXrZesJimKQA/StkSa1nSAQ=="/>
+        </item>
+        <item>
             <title>1.8.0</title>
             <pubDate>Fri, 17 Jul 2026 17:13:40 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.0</link>
