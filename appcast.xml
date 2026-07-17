@@ -3,6 +3,41 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.6.1</title>
+            <pubDate>Fri, 17 Jul 2026 13:28:37 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.6.1</link>
+            <sparkle:version>202607171318</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.6.1
+
+本版重点：
+
+- 统一电脑健康中心与其他主功能页的页头、图标、间距和原生玻璃层次，移除健康页重复的辅助功能标签。
+- 精简内存管理页：没有可退出应用时不再展示“全选、清除选择、退出所选应用”等无效按钮，也不再重复显示相同的可用内存和正常状态。
+- 内存状态正常时保持简洁；需要处理时，操作按钮直接显示具体建议，避免含糊的通用按钮文案。
+- 应用卸载首次读取期间不再显示一个不可用的“重新扫描”按钮；读取完成后才提供刷新操作。
+- 主窗口隐藏重复的工具栏标题，只保留系统边栏控制，减少窗口标题与页面标题重复。
+- 安全清理、开发缓存、大文件与重复文件的准备页说明改为用途和安全边界，不再与页面中的“重新扫描”按钮重复。
+- 新增 UI 一致性回归测试，覆盖健康页头、内存空状态、卸载加载态、窗口标题栏和准备页文案。
+
+验证结果：
+
+- 1,109 个自动化测试，0 失败，2 个按设计或环境条件跳过。
+- Xcode 26.6 / macOS 26.5 SDK、arm64、最低 macOS 14.0、Release 构建、严格 codesign、DMG/ZIP 和 SHA-256 全部验证。
+- 真实界面复核通过：电脑健康中心、内存管理、应用卸载加载态与完成态均按预期显示。
+- 本版没有修改 Mac 综合性能指数工作负载、冻结基线或 1.6.0 校准数据。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.6.1.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.6.1/StorageCleanerMac-1.6.1.zip" length="34280165" type="application/octet-stream" sparkle:edSignature="Ooe3xQk99agh3EclKwn4j4aizYUMVBTqIkMXoWH8tIWe10KOigqSmk8Y6VxeEQAxaoV5XEVQEogNilXcG1jIDQ=="/>
+        </item>
+        <item>
             <title>1.6.0</title>
             <pubDate>Fri, 17 Jul 2026 11:52:39 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.6.0</link>
