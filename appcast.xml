@@ -3,6 +3,44 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.4</title>
+            <pubDate>Sat, 18 Jul 2026 19:48:05 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.4</link>
+            <sparkle:version>202607181925</sparkle:version>
+            <sparkle:shortVersionString>1.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.4
+
+本版重点：
+
+- 综合跑分继续作为“电脑健康”中的子功能，不新增应用入口、窗口、Router、数据库或平行生命周期。
+- 跑分 Session 由 App 级 MacBenchmarkStore 和共享 HeavyWorkCoordinator 统一持有；切换 Sidebar、离开页面或 SwiftUI View 重建不会取消底层任务。
+- 增加合法状态与阶段转换校验，拒绝重复启动、进度倒退、跨阶段回退以及旧 Session 的延迟回调。
+- 显式取消、执行器失败和 App 退出都会请求停止并尽力清理；退出流程有界等待最多 3 秒，不会依赖 View 或 deinit 完成关键清理。
+- 启动清理仅会处理 App 私有 BenchmarkTemporary 目录中超过 24 小时的普通跑分文件，不扫描、删除或改写用户文件。
+- 历史记录仍使用原有 JSON 数组格式。损坏、截断、超限或不可读文件会保留原始字节，并阻止后续保存静默覆盖。
+- 当前评分快照在经过独立复算后保存；历史结果使用由 raw measurements 稳定派生的 Session ID 去重，相同时间但原始样本不同的结果不会互相覆盖。
+- 独立诊断统计层计算 median、MAD、P50、P95、P99 和 relative MAD；结果页新增 relative MAD 与 A/B/C 波动稳定性提示，并与冻结评分统计分离。
+- 新增可读算法 Manifest：measurement schema v1、Standard workload v6、冻结 statistics v1、diagnostic statistics v2、scoring v6 和参考集 m5-pro-2026-07-v6 分开展示。
+- Standard v6 工作负载、三次正式样本、内存/系统盘容量计分、评分权重、参考数据、自动上传协议和冻结校准全部未改，本版没有重跑校准。
+
+验证范围：
+
+- 1,281 个应用自动化测试全部执行，0 失败；3 个必须显式启用的重负载/真机测试按设计跳过。
+- 新增状态转换、重入保护、旧回调隔离、终止等待、协调器 quarantine、统计边界、历史损坏保护、取消不入榜和稳定 Session ID 测试。
+- Xcode 26.6 / macOS 26.5 SDK Release 构建和主应用 `--verify` 通过；最低 macOS 14.0、arm64、Sparkle 公开更新源/公钥、中文菜单、设置窗口和主窗口恢复均保持有效。
+- 本版没有执行 Standard 实机重型跑分或重新校准；冻结源指纹测试通过。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.8.4.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.4/StorageCleanerMac-1.8.4.zip" length="35074876" type="application/octet-stream" sparkle:edSignature="zZiDHNRb2duxQ2LHx1IM3SkhnVjvrGU0nIgmUWblfEgyB06vQodPpgd25susEzcrXWwZ5BdpwJR0mK1U7AUdDQ=="/>
+        </item>
+        <item>
             <title>1.8.3</title>
             <pubDate>Sat, 18 Jul 2026 14:55:10 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.3</link>
