@@ -3,6 +3,43 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.3</title>
+            <pubDate>Sat, 18 Jul 2026 14:55:10 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.3</link>
+            <sparkle:version>202607181437</sparkle:version>
+            <sparkle:shortVersionString>1.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.3
+
+本版重点：
+
+- 建立唯一的原生 macOS 设计系统：页面标题、正文、说明、数字和菜单栏文字全部改用系统语义字体；颜色、间距、动画和按钮层级由共享令牌统一管理。
+- 新增统一 AppButton 组件族，合并页面与小窗内重复的按钮样式。主要、次要、图标、危险、工具栏和玻璃按钮统一名称、图标、Hover、焦点、禁用与辅助功能行为。
+- 收平主窗口、电脑健康、安全清理、文件分析、设置和系统工具中的多层卡片、图标底板与环形套卡片；百分比和健康指标优先使用原生线性 ProgressView 与 Divider 表达层级。
+- 修复 Mac 跑分页在最小窗口下的文字覆盖与元数据截断。标题区使用自适应横排/纵排，处理器、内存和硬盘信息可换行，长型号与容量不会再挤压分数或开始按钮。
+- 跑分结果、六项分数、历史和社区排行榜改为单层内容布局；排行榜继续显示用户 ID（电脑名称）、处理器型号、内存、硬盘、总分和测试时间，合格成绩完成后自动上传，失败时才显示重试。
+- 菜单栏精简、详细和极客三种小窗共用同一套语义字体与按钮。详细模式只保留一个蓝色主操作，刷新、设置和暂停恢复为中性系统按钮；极客模式保留八个路由、真实 120 秒图表和可滚动详情。
+- macOS 26 的真实 NSPopover 不再叠加第二层手绘玻璃外壳；低版本继续使用语义一致的系统材质降级，并遵循降低透明度、提高对比度和减少动态效果。
+- 对话框关闭动作统一为明确的“关闭”，移除含义模糊的 OK/好；关键图标按钮均保留 tooltip 和 VoiceOver 标签。
+- Standard v6 评分、内存与系统盘容量计分、自动上传协议、冻结基准及 1.6.0 历史校准证据均未改动，也没有重新跑校准。
+
+验证范围：
+
+- 1,257 个应用自动化测试全部执行，0 失败；3 个重负载或显式校准条件测试按设计跳过。覆盖 UI 一致性、跑分与排行榜、自动上传、清理安全、菜单栏会话、取消/超时和硬件媒体路径。
+- 真实界面验证覆盖 980 pt 最小主窗口、跑分页长元数据、浅色与深色、菜单栏 360 × 300 精简模式、430 × 560 详细模式和 720 × 620 极客模式，以及同层设置切换。
+- Xcode 26.6 / macOS 26.5 SDK 编译通过；最低 macOS 14.0、arm64、Sparkle 公开更新源/公钥、中文菜单、设置窗口和主窗口关闭后恢复均已验证。
+- 排行榜网络协议和服务端本版没有变更；沿用 1.8.2 已验证的 Standard v6 校验、隐私边界与线上 Worker。
+
+安装与更新说明：
+
+- 公开安装包文件名均带版本号：StorageCleanerMac-1.8.3.dmg / .zip；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 仍使用 Apple Development 签名，不是 Developer ID 公证版本；其他 Mac 可能出现 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.3/StorageCleanerMac-1.8.3.zip" length="35051566" type="application/octet-stream" sparkle:edSignature="puoc+74M0Ie3RJDP9aWf3Y/BbZZds/68GDGN4YvOFThvMnhpsWjHTAr5W7oGTXUy/hvh0Oz8i6tZPQM6TdDDAg=="/>
+        </item>
+        <item>
             <title>1.8.2</title>
             <pubDate>Sat, 18 Jul 2026 09:25:54 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.2</link>
