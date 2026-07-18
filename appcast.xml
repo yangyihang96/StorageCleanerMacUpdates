@@ -3,6 +3,43 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.5</title>
+            <pubDate>Sun, 19 Jul 2026 00:06:48 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.5</link>
+            <sparkle:version>202607182246</sparkle:version>
+            <sparkle:shortVersionString>1.8.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.5
+
+本版重点：
+
+- 完成全项目 macOS UI Design Audit；主窗口、设置、电脑健康与跑分、工具箱、清理与文件列表、Sheet、Alert，以及精简/详细/极客三种菜单栏面板统一使用同一套系统语义字体、颜色、间距、圆角、阴影、动画和 AppButton 控件族。
+- 正文、表格、编辑与数据区统一为清晰的平面 Surface；只有 Popover、图表提示等真正浮动的呈现层保留单层系统材质，不叠加 Blur 或网页式 glassmorphism。
+- 主窗口恢复系统标题和原生 Toolbar 设置入口；项目浏览器改为可拖动 HSplitView，并补齐键盘上下选择、焦点保持、系统选择色和可访问性状态。
+- 设置页改为原生 grouped Form/Section；权限、更新源、提醒与排除项层级一致。NSOpenPanel 改为非阻塞呈现，并通过共享协调器防止重复面板、双 Sheet 和旧回调覆盖新会话。
+- 统一 Primary、Secondary、Toolbar、Icon、Menu 与 Destructive 按钮的 hover、pressed、disabled、loading、focus、字体、图标和间距；页面不再各自维护按钮样式。
+- 功能性色彩全部收口为语义 Palette，动画收口为统一 Motion token；正文不再直接使用散落的蓝、绿、橙、灰或局部 spring/smooth/snappy 动画。
+- 改进 VoiceOver 与键盘体验：装饰图标不重复朗读，状态 Toast 在每次消息变化时公告，搜索支持焦点/清除/Escape，列表选择和图标按钮具有明确名称与状态。
+- 菜单栏面板在 App 失活、屏幕参数变化或显式关闭时可靠收起，清理 observer 与窗口资源；三种面板尺寸、路由和实时数据能力保持不变。
+- 跑分仍是“电脑健康”中的子功能。measurementSchemaVersion 保持 mac-benchmark-measurement-schema-v1，workloadVersion 保持 mac-benchmark-standard-v6，statisticsVersion 保持 mac-benchmark-statistics-v1，diagnosticStatisticsVersion 保持 mac-benchmark-statistics-v2，scoringVersion 保持 mac-benchmark-scoring-v6，referenceSetVersion 保持 m5-pro-2026-07-v6；历史格式、自动上传协议和冻结校准全部未改，本版没有重跑校准。
+
+验证范围：
+
+- 1,296 个应用自动化测试全部执行，0 失败；3 个必须显式启用的重负载/真机测试按设计跳过。
+- 新增文件面板防重入、取消、旧回调隔离，以及键盘选择、焦点、状态公告和全局 UI 一致性回归测试。
+- Xcode 26.6 / macOS 26.5 SDK 主应用构建和 build_and_run.sh --verify 通过；最低 macOS 14.0、arm64、Sparkle 公开更新源/公钥、中文菜单、设置窗口和主窗口关闭/恢复均保持有效。
+- 本版没有执行 Standard 实机重型跑分或重新校准；冻结工作负载、评分和参考源未修改。
+
+安装与更新说明：
+
+- 版本为 1.8.5（Build 202607182246）。公开安装包使用带版本号的中文与 ASCII 文件名；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID、也未公证；严格 codesign 可以有效，但 Gatekeeper spctl 会拒绝，其他 Mac 可能显示开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.5/StorageCleanerMac-1.8.5.zip" length="35085882" type="application/octet-stream" sparkle:edSignature="FzgeJhMhabj7sWNqf/jzpd5/hrJfTB/FjOz/90bxgQSJe6A5/mdk/o28Yc3jRgaC9VeaxNwLexTVOoky+V2NCw=="/>
+        </item>
+        <item>
             <title>1.8.4</title>
             <pubDate>Sat, 18 Jul 2026 19:48:05 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.4</link>
