@@ -3,6 +3,42 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.6</title>
+            <pubDate>Sun, 19 Jul 2026 02:01:42 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.6</link>
+            <sparkle:version>202607190111</sparkle:version>
+            <sparkle:shortVersionString>1.8.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.6
+
+本版重点：
+
+- 主窗口收口为系统窗口壳、原生 Sidebar 选中态与 Toolbar，删除重复品牌头、自绘标题栏、透明标题栏及强制居中逻辑。
+- 智能扫描、系统健康、性能测试、安全清理和系统工具共用 AppPageHeader、AppSymbols、AppChartPalette 及系统 Accent，不再使用每页一种主题色。
+- 扫描与健康结果改用平面分组、紧凑数据行和原生空状态，减少描边圆角卡片、大图标、大段说明与正文材质。
+- 浏览器隐私检查默认只显示对象、状态与扫描操作；读取边界、敏感域名开关和“删除需在浏览器内确认”移入可展开隐私详情。
+- 健康页统一为“系统健康”与“概览 / 性能测试”，趋势空状态改为“完成两次检查后显示趋势”；主结果收口为“性能指数”和单一“开始测试”操作。
+- 精简、详细、极客三种菜单栏面板共用同一操作栏，统一设置、显示主窗口、暂停/继续、刷新的顺序、SF Symbols、Tooltip 与辅助功能名称；原尺寸、八路由和 120 秒图表保持不变。
+- 跑分仍是“系统健康”中的子功能。measurementSchemaVersion 保持 mac-benchmark-measurement-schema-v1，workloadVersion 保持 mac-benchmark-standard-v6，statisticsVersion 保持 mac-benchmark-statistics-v1，diagnosticStatisticsVersion 保持 mac-benchmark-statistics-v2，scoringVersion 保持 mac-benchmark-scoring-v6，referenceSetVersion 保持 m5-pro-2026-07-v6；历史格式、自动上传协议和冻结校准全部未改，本版没有重跑校准。
+
+验证范围：
+
+- 全量 SwiftPM 单元与集成测试共 1,304 项：0 失败，3 跳过；主应用 Release 构建与 build_and_run.sh --verify 通过。
+- 新增原生窗口壳、Sidebar、AppPageHeader、语义图标/图表色、菜单栏共享操作栏与设置窗口恢复边界的回归测试。
+- 中文菜单、设置窗口、主窗口关闭/恢复、浅色/深色主窗口与精简/详细/极客三种真实菜单栏小窗均已验收。
+- Xcode 26.6 / macOS 26.5 SDK，最低 macOS 14.0，arm64；四个 DMG/ZIP 的包结构、SHA-256 与严格 codesign 验证通过。
+- 本版没有执行 Standard 实机重型跑分或重新校准；冻结工作负载、评分和参考源未修改。
+
+安装与更新说明：
+
+- 版本为 1.8.6（Build 202607190111）。公开安装包使用带版本号的中文与 ASCII 文件名；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID、也未公证；严格 codesign 可以有效，但 Gatekeeper spctl 会拒绝，其他 Mac 可能显示开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.6/StorageCleanerMac-1.8.6.zip" length="35032984" type="application/octet-stream" sparkle:edSignature="nrpdKhEHiBinMRPzodwafLJkVzRrTL4iXmCteeIeLsDF4G6bApZv9bYVLj28EDJptBO+vnKFdiIEeI/D687+DA=="/>
+        </item>
+        <item>
             <title>1.8.5</title>
             <pubDate>Sun, 19 Jul 2026 00:06:48 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.5</link>
