@@ -3,6 +3,30 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.10</title>
+            <pubDate>Sun, 19 Jul 2026 22:28:50 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.10</link>
+            <sparkle:version>202607192146</sparkle:version>
+            <sparkle:shortVersionString>1.8.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.10
+
+本版重点：
+
+- 修复“安全清理”与“开发工具与产物”在窄窗口中的双栏内容重叠，并在更窄宽度下自动切换为上下布局。
+- 新增 Claude Code 与 OpenClaw 精确缓存清理边界；只列出明确可再生的缓存和临时目录，日志只供复核，设置、凭据、会话、项目、记忆与工作区不会列入清理。
+- Panel 设置统一更名为“小窗设置”，保持原生 Popover 与 Form 交互。
+
+安装与更新说明：
+
+- 版本为 1.8.10（Build 202607192146），最低支持 macOS 14.0，当前发布包为 arm64。
+- 更新 ZIP 使用钥匙串专用账户 com.local.StorageCleanerMac 的 EdDSA 密钥签名。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID，也未公证；严格 codesign 可以有效，但 Gatekeeper spctl 会拒绝。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.10/StorageCleanerMac-1.8.10.zip" length="34970270" type="application/octet-stream" sparkle:edSignature="/z+aAv++YU2IIVtYvzKMHCKRx2a9NDwd2uF/XEMAr8Gfx7zsNHVt0NMQlRCCHzmgOuCb2oNbLLYRJc5/4uAaCg=="/>
+        </item>
+        <item>
             <title>1.8.9</title>
             <pubDate>Sun, 19 Jul 2026 19:00:26 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.9</link>
