@@ -3,6 +3,37 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.11</title>
+            <pubDate>Mon, 20 Jul 2026 04:03:02 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.11</link>
+            <sparkle:version>202607200058</sparkle:version>
+            <sparkle:shortVersionString>1.8.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.11
+
+本版重点：
+
+- “应用更新”升级为统一更新中心：扫描标准应用目录、Spotlight 可发现位置、用户授权目录、可选外置卷以及 Homebrew Formula/Cask；不能自动更新的软件仍会完整显示。
+- 系统、App Store、Homebrew、Sparkle、签名化官方来源与手动来源按真实证据分流。App Store 不模拟点击，未知官网不自动信任；只有来源、Bundle ID、Team ID 和代码签名均通过的项目才进入“更新全部”。
+- Homebrew 只使用公开 CLI 和结构化参数；更新队列支持部分失败、取消、重试和恢复，安装后只有磁盘版本真实变化才标记成功。
+- 官网更新使用逐项向导；签名注册表只能描述身份、域名和验证规则，不能下发脚本，也不会一次打开大量标签页。
+- “登录项”重构为“登录项与后台任务”：同时扫描 Open at Login、五个标准 launchd 目录、应用包内辅助项、launchd 运行态、已关联 Privileged Helper 与可选 BTM 诊断证据。
+- 新状态模型分开注册、授权、启用、载入、进程和管理状态；没有 PID 不再被误报为已停用。同一应用的 Agent、LoginItem 和 Helper 合并为一个主行。
+- 只有归属可验证、位于当前用户 LaunchAgents 目录的普通项目可直接管理，操作使用结构化 launchctl 参数并在前后查询真实状态，不修改第三方 plist。
+- Apple、MDM、现代后台项、系统级 Agent/Daemon 和低置信项目保持只读或转到系统设置。本版不携带 Privileged Helper，不会伪装为可直接修改系统项。
+- 602 项应用清单和 1,050 条启动项原始证据已完成本机只读验收；SwiftPM 全量 1,456 项测试 0 失败、5 个明确的可选真机/硬件测试跳过。
+- 性能测试仍是“系统健康”中的子功能。Standard v6 工作负载、测量、统计、评分、参考数据、历史格式和冻结校准全部未改，本版没有重跑校准。
+
+安装与更新说明：
+
+- 版本为 1.8.11（Build 202607200058），最低支持 macOS 14.0，当前发布包为 arm64。
+- 更新 ZIP 使用钥匙串专用账户 com.local.StorageCleanerMac 的 EdDSA 密钥签名。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID，也未公证；严格 codesign 可以有效，但 Gatekeeper spctl 会拒绝。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.11/StorageCleanerMac-1.8.11.zip" length="36023741" type="application/octet-stream" sparkle:edSignature="hBOIR5vISUDxA2QELLywNfcXEhX+q2GN6Co3bJbX7La9RxRHzQcpie+Gqua6xWFd2OT/aGmul1EvlvBa9sm6BA=="/>
+        </item>
+        <item>
             <title>1.8.10</title>
             <pubDate>Sun, 19 Jul 2026 22:28:50 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.10</link>
