@@ -3,6 +3,46 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.8.9</title>
+            <pubDate>Sun, 19 Jul 2026 19:00:26 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.9</link>
+            <sparkle:version>202607191759</sparkle:version>
+            <sparkle:shortVersionString>1.8.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.8.9
+
+本版重点：
+
+- 对主窗口与菜单栏 Panel 执行 UI Normalization Pass，不新增功能、卡片、说明文案或正文毛玻璃；扫描、清理、卸载、更新、权限和采样业务行为保持不变。
+- “简单 / 复杂 / 极客”继续是同一个 Panel Scene 中的三档密度，共用同一 Window、Session、ScanStore、ComputerHealthStore、MenuBarMonitorState、标题区、工具栏、图标系统和状态逻辑，不创建平行窗口或重复采样任务。
+- 三档 Panel 分别使用约 500 × 330、520 × 680、760 × 600 点的理想尺寸，并分别保存用户最后使用的完整窗口 frame；切换密度时复用当前 Panel，显示器变化后会将窗口约束回仍然有效的屏幕。
+- Panel Header 统一为页面图标、标题/“系统 · 清理”切换、`更新于 HH:mm`、实时/暂停状态、暂停、刷新和更多菜单；秒数只用于详情，设置、置顶、打开主窗口和关闭 Panel 均进入低频入口。
+- 简单模式统一四项 3–5 秒可扫读指标和一条网络趋势；复杂模式统一摘要、单一主图表和详情区；极客模式使用可滚动的 3 × 2 摘要、自适应双列/单列布局，不再通过缩小字号适配固定高度。
+- 主窗口 PageTitle、SectionTitle、Body、Secondary、Caption 与动态等宽数字统一到系统语义字级；智能扫描、系统健康、安全清理、开发产物、大文件、重复文件与应用更新复用同一 AppEmptyState 和视觉中心规则。
+- 功能图标统一 regular weight、medium scale、16/18 点光学盒与 32 点命中区；Sidebar、Toolbar 与 Panel rail 使用单色或 hierarchical SF Symbols，生成图片仍只允许出现在 App、Dock 与“关于”等品牌位置。
+- Light、Dark、Key、Inactive、Reduce Transparency 与 Increase Contrast 使用系统语义窗口/内容表面；Panel 设置改为原生 Popover + Form，不再使用整页灰色设置面板或手绘关闭按钮。
+- 图表统一 CPU 蓝、GPU 紫、网络青、能耗橙；趋势必须同时具备至少两个连续有限样本与最小有效时间跨度，并按真实采样时间识别间断。百分比固定 0–100，网络量程只包含实际可绘制的数据系列，采样不足时显示“正在采样…”。
+- 修复 Escape 从主窗口或设置 Popover 误关 Panel、显示器移除后退回失效屏幕、间断样本留下无曲线空图，以及孤立网络通道压扁有效曲线等复审问题。
+- 性能测试仍是“系统健康”中的子功能。measurementSchemaVersion 保持 mac-benchmark-measurement-schema-v1，workloadVersion 保持 mac-benchmark-standard-v6，statisticsVersion 保持 mac-benchmark-statistics-v1，diagnosticStatisticsVersion 保持 mac-benchmark-statistics-v2，scoringVersion 保持 mac-benchmark-scoring-v6，referenceSetVersion 保持 m5-pro-2026-07-v6；历史格式、自动上传协议和冻结校准全部未改，本版没有重跑校准。
+
+验证范围：
+
+- SwiftPM 全量单元与集成测试共 1,316 项：0 失败，3 项按硬件/环境边界跳过。
+- 新增或迁移三密度独立 frame、窗口移动/缩放保存、跨屏约束、同一 Panel Session、设置 Popover、App 失焦不关闭、Escape 限域、连续图表样本、量程、语义字体、空状态和图标契约测试。
+- 主应用 Debug、build_and_run.sh --verify 与真实窗口重开通过；74 张真实界面截图覆盖所有主页面和三档 Panel 的 Light/Dark、设置 Popover、Key/Inactive、Reduce Transparency 与 Increase Contrast。
+- 本版不执行 Standard 实机重型性能测试或重新校准；冻结工作负载、评分和参考源未修改。
+
+安装与更新说明：
+
+- 版本为 1.8.9（Build 202607191759）。公开安装包使用带版本号的中文与 ASCII 文件名；安装后的应用名称仍为“存储清理助手.app”。
+- 自动更新只访问公开的 StorageCleanerMacUpdates 仓库，不需要登录私有源码仓库。
+- 更新 ZIP 只使用钥匙串专用账户 com.local.StorageCleanerMac 的 EdDSA 密钥签名；不会生成或切换到默认密钥。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID、也未公证；严格 codesign 可以有效，但 Gatekeeper spctl 会拒绝，其他 Mac 可能显示开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.8.9/StorageCleanerMac-1.8.9.zip" length="34952111" type="application/octet-stream" sparkle:edSignature="an2JCHS099+u+DxVYrJQFGy0bq1393Iz0nGu9cYZ6DLV1fsqIoSZOWrZeJp23jFQeD403ues38EB6weXuzilDg=="/>
+        </item>
+        <item>
             <title>1.8.8</title>
             <pubDate>Sun, 19 Jul 2026 15:28:13 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.8</link>
