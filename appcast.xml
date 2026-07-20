@@ -3,6 +3,42 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.0</title>
+            <pubDate>Mon, 20 Jul 2026 15:01:24 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.0</link>
+            <sparkle:version>202607201018</sparkle:version>
+            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.0
+
+本版重点：
+
+- 重构菜单栏极客小窗：移除默认大型圆环，改用可快速横向对比的紧凑指标单元。
+- 统一简单、复杂和极客模式的 Panel Shell、Header、Navigation、暂停、刷新、置顶和窗口恢复逻辑；切换模式不创建新窗口或重复采样器。
+- 新增处理器、内存、磁盘、网络、传感器、电源和清理详情页，共用统一的摘要、趋势、结构化明细模板。
+- 极客概览支持显示、隐藏和排序模块，可选半宽或全宽、摘要指标、小型圆环及 60/120 秒图表范围，并可恢复默认布局。
+- 极客窗口默认 720 × 680 pt，最小 520 × 500 pt；宽窗口双列、窄窗口自动重排并保持正常字号，内容可滚动不再裁切。
+- 图表统一为最近 120 秒趋势，数据不足时显示“正在采样…”；CPU、GPU、内存、网络、温度和能耗使用固定数据系列颜色。
+- 按数据领域分离刷新依赖，历史样本有界，辅助数据节流；暂停时停止趋势追加，页面切换不重复启动任务。
+- 左侧导航缩窄为 48 pt，统一 SF Symbols、Hover、Tooltip、键盘焦点和 VoiceOver 标签。
+- 启用全新浅色与深色应用图标，Finder、Dock 和应用内品牌界面使用对应外观资源。
+
+验收：
+
+- 完整执行 1,554 项自动化测试，0 失败，5 项真机/硬件环境测试跳过。
+- Light、Dark、默认宽度、窄窗口和全部极客详情页已完成真实运行与截图检查。
+- 版本为 1.9.0（Build 202607201018），基于已发布的 1.8.12 继续开发。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要将新包内容合并到旧 App 目录。
+- 应用内更新仅使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- 当前公开包使用 Apple Development 签名，不是 Developer ID Application 签名且未经 Apple 公证；手动安装时 macOS 仍可能显示 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.0/StorageCleanerMac-1.9.0.zip" length="14761024" type="application/octet-stream" sparkle:edSignature="6RZMESGIRhrwMR6jFFIRyjPTHpkhXEhYBm0Nk3jwxwN6HaxPyvpDy7JuwpkUOtJuc9xbFwozDjQR/u6AVfRhDQ=="/>
+        </item>
+        <item>
             <title>1.8.12</title>
             <pubDate>Mon, 20 Jul 2026 10:17:39 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.8.12</link>
