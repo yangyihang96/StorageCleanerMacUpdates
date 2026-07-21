@@ -3,6 +3,44 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.2</title>
+            <pubDate>Tue, 21 Jul 2026 23:28:02 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.2</link>
+            <sparkle:version>202607212316</sparkle:version>
+            <sparkle:shortVersionString>1.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.2
+
+本版重点：
+
+- 菜单栏小窗统一为极客模式，继续复用同一个 Panel、同一数据源和同一采样生命周期；旧的简单/复杂偏好只做兼容迁移，不再作为可选模式显示。
+- 一级小窗保持紧凑的 301 × 553 点固定尺寸，并直接锚定在被点击的菜单栏图标下方；点击小窗外部会自动关闭。
+- 默认只显示一级概览，悬停模块后在侧面展开等宽二级明细，继续悬停再展开三级内容；三级窗口不覆盖前两级，也不再显示额外标题栏或关闭键。
+- 移除一级概览中的清理摘要、Load Average、独立 Fans 和内存构成模块；内存二级及对应三级窗口中的内存构成也已删除，保留内存趋势、进程和 Swap 等实用信息。
+- CPU 与网络柱状图按真实 1/2/5 秒采样间隔计算柱宽，统一主要图表高度并保留真实 120 秒时间比例，不再拉伸或伪造缺失历史。
+- 网络详情补充真实上传/下载、接口、Wi-Fi、链路、地址和逐进程流量；采样中、无活动与读取失败保持不同状态。
+- 传感器按当前硬件动态显示，读取不到的温区不再占位；风扇使用真实硬件名称和数量，并保留安全的只读监控边界。
+- Energy Mode 现在可以真实切换 Automatic、Low Power 和硬件支持时的 High Power；Battery 与 AC 分开控制，写入后重新读取并精确核对，取消授权或失败时不会伪装成功。
+- 无内置电池的 Mac 会隐藏电池相关内容；Energy Mode 三级窗口会自动对齐到首个可用卡片。Light/Dark Mode、VoiceOver 与侧栏悬停状态继续使用系统语义样式。
+- 软件更新策略改为直接获取公开 appcast 中的最新版，不再要求逐个安装中间版本。
+
+验收：
+
+- 版本为 1.9.2（Build 202607212316），在 1.9.1 发布代码线上继续开发。
+- 完整执行 1,690 项自动化测试，0 失败；5 项依赖显式真机/环境的测试按预期跳过。
+- Energy Mode 写入测试全部使用注入式执行器，发布验证期间没有实际改变本机电源模式。
+- Release 构建、归档校验、Sparkle 签名和真实安装结果以本次发布验证报告为准。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要将新包内容合并到旧 App 目录。
+- 应用内更新仅使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- 当前机器只有 Apple Development 证书，没有 Developer ID Application 证书和 Apple notarization 凭据；本次包不能宣称为 Apple 公证发行版，首次手动安装时 macOS 可能显示 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.2/StorageCleanerMac-1.9.2.zip" length="15253955" type="application/octet-stream" sparkle:edSignature="clc/emMY25wFxu5krF5jIc9e9+lsaaBpsJ+PnSJzjnaHvjoxwbylnj9m1S+19VMoZbRd7XRPcnMUD5jvsRWDAQ=="/>
+        </item>
+        <item>
             <title>1.9.1</title>
             <pubDate>Tue, 21 Jul 2026 18:08:14 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.1</link>
