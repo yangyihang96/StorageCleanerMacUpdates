@@ -3,6 +3,42 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.1</title>
+            <pubDate>Tue, 21 Jul 2026 18:08:14 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.1</link>
+            <sparkle:version>202607211756</sparkle:version>
+            <sparkle:shortVersionString>1.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.1
+
+本版重点：
+
+- 极客模式成为菜单栏小窗的完整母版；详细模式复用同一 Panel、同一组件、同一数据源和同一悬停层级，只减少扩展字段，简单模式继续保留最少信息。
+- 一级小窗固定为紧凑的 301 × 553 点组合视图，不再允许自由缩放；CPU、内存压力、磁盘、网络、传感器和电源按稳定顺序排列。
+- 默认打开只显示一级概览；悬停模块后才快速展开二级明细，逐项悬停继续显示三级趋势、设备或连接信息。
+- CPU、内存、磁盘和传感器等占用型指标统一使用环形表达，并把主要数值、单位和说明放入或紧邻圆环，删除无意义横线和重复说明。
+- 详细模式与极客模式使用同一视觉比例、字号、间距、圆角和交互；详细模式隐藏 GPU 扩展、逐进程网络、公网地址等高阶字段，不再维护另一套界面。
+- 网络详情加入真实逐进程上传/下载速率、当前接口、Wi-Fi、链路、本地 IPv4/IPv6 和公网地址；采样不足、无活动和读取失败保持不同状态，不把旧速率冒充当前值。
+- 传感器详情扩展芯片、GPU、SSD、电池、气流、掌托、雷雳与 Wi-Fi 等真实可用温区，并按硬件报告风扇名称、数量、转速和历史；取不到的数据保持明确不可用，不伪造数值。
+- 点击小窗外部会自动关闭；暂停、刷新、模式、频率、置顶和设置入口收敛在同一工具区，减少常驻文字和多余开关。
+- 进程列表先显示可用快照，再补充较慢的能耗测量；网络进程按需采样，离开极客网络页即取消，减少打开和页面切换延迟。
+- 全部三种模式继续使用一个 NSPanel、一个采样生命周期和同一状态模型，切换模式不会创建新窗口或重复启动采样器。
+
+验收：
+
+- 完整执行 1,648 项自动化测试，0 失败；5 项依赖真机硬件/环境的测试按预期跳过。
+- 版本为 1.9.1（Build 202607211756），最低支持 macOS 14.0，当前发布包为 arm64。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要将新包内容合并到旧 App 目录。
+- 更新 ZIP 使用钥匙串专用账户 com.local.StorageCleanerMac 的 EdDSA 密钥签名。
+- 当前 App 使用 Apple Development 签名，不是 Developer ID，也未公证；严格 codesign 有效，但 Gatekeeper spctl 会拒绝，其他 Mac 可能显示开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.1/StorageCleanerMac-1.9.1.zip" length="15371932" type="application/octet-stream" sparkle:edSignature="jiZISrsoCPWZON/rBR7TB4vFJo9UfybKWU8L89wL7gjQjCAt60r+TEoRNeTeBTQNfJn2GGNdYdmOua77n7OuBQ=="/>
+        </item>
+        <item>
             <title>1.9.0</title>
             <pubDate>Mon, 20 Jul 2026 15:01:24 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.0</link>
