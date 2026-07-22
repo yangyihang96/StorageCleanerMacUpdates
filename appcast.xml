@@ -3,6 +3,44 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.3</title>
+            <pubDate>Wed, 22 Jul 2026 18:46:30 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.3</link>
+            <sparkle:version>202607221000</sparkle:version>
+            <sparkle:shortVersionString>1.9.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.3
+
+本版重点：
+
+- 菜单栏极客小窗的二级内容改为即时展开，移除原有 Hover 延迟；外接卷扫描继续放在后台，不阻塞小窗交互。
+- CPU 每个核心使用相同固定字号，数值不再被压缩成省略号；核心分组按真实性能层级映射，18 核、24 核、M3 Ultra 等更多核心会自动增加行数和核心卡高度，不截断核心。
+- 图表时间范围可在原“120 秒”位置直接选择 1 小时、3 小时、6 小时、12 小时、1 天、3 天、7 天、14 天或 28 天。最近 1 小时保留真实高分辨率样本，更早历史按分钟压缩，显示时最多抽取 360 个真实点。
+- CPU 等百分比柱状图会根据真实峰值选择更易观察的纵轴范围；电池电量趋势使用自适应区间，圆形电量百分比保持完整显示。
+- 无内置电池但连接电源适配器的 Mac 会显示 macOS 实际报告的输入功率、电压、电流和适配器名称；缺失字段保持不可用状态，不伪造数据。
+- 主窗口设置新增小窗配色：跟随系统、海洋蓝、紫罗兰、薄荷绿、石墨灰和自定义背景/柱状图颜色。选择会写入持久偏好并实时应用到 Light/Dark Mode 小窗。
+- Fans 开关已从设置移除；真实风扇读数仍在小窗传感器页显示，控制模式入口放在风扇卡内。当前没有受信任的特权辅助程序时只提供 macOS 系统自动模式，不伪装手动调速成功。
+- Public IP 会在国家查询成功时显示对应国旗；查询失败、服务不支持该地址或网络不可用时只显示真实 IP，不影响网络采样。
+- “文件分析 > 大型文件”新增外接硬盘迁移建议。只识别真实、可写、非内置且非磁盘映像的卷；复制到外接盘后先做 SHA-256 或 App 签名/身份校验，再把未变化的原件移到废纸篓。目标重名、空间不足、App 正在运行或校验失败时不会覆盖或删除原件。
+
+验收：
+
+- 版本为 1.9.3（Build 202607221000），从已公开的 1.9.2 代码线上新建版本；不会覆盖 v1.9.2 标签、Release 或资产。
+- 完整执行 1,703 项自动化测试，0 失败；5 项依赖显式真机/环境的测试按预期跳过。
+- 本机 18 核 CPU 已现场显示 18 个完整、同字号的真实核心占用数字，二级小窗即时展开也已通过真实运行态核对；完整时间范围选项和持久化由专项测试覆盖。
+- 当前未检测到已挂载的真实物理外接硬盘；只检测到磁盘映像并已正确排除，因此本版外接盘迁移已完成隔离测试，但真实硬盘拷贝/移入废纸篓仍需在物理外接盘重新连接后验收。
+- Release 构建、归档校验、Sparkle 签名、公开下载和实际安装结果以 1.9.3 发布验证报告为准。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要将新包内容合并到旧 App 目录。
+- 应用内更新仅使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- 当前机器只有 Apple Development 证书，没有 Developer ID Application 证书和 Apple notarization 凭据；本次包不能宣称为 Apple 公证发行版，首次手动安装时 macOS 仍可能显示 Gatekeeper 开发者验证提示。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.3/StorageCleanerMac-1.9.3.zip" length="15420001" type="application/octet-stream" sparkle:edSignature="mVoMZ/NL7O0fY20Ux4k0dakFktX9mmIyhC+G7XJfI8iNemtCPcS6MueQA9jQSKpbKGEY2daJL982Q8U1TdqcBg=="/>
+        </item>
+        <item>
             <title>1.9.2</title>
             <pubDate>Tue, 21 Jul 2026 23:28:02 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.2</link>
