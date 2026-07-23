@@ -3,6 +3,44 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.4</title>
+            <pubDate>Thu, 23 Jul 2026 11:17:10 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.4</link>
+            <sparkle:version>202607222218</sparkle:version>
+            <sparkle:shortVersionString>1.9.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.4
+
+本版继续优化文件管理和日常维护流程，并保持菜单栏小窗使用原有 Panel 与真实硬件数据源。
+
+主要更新：
+
+- 外接硬盘迁移建议现在会显示真实 App 图标，并可直接迁移符合安全条件的 App 本体；目标卷、空间、重名、运行状态和复制后身份校验仍按原安全边界处理。
+- “登录项与后台任务”只显示本机能够直接管理的项目，行内直接提供启用或关闭操作；系统、MDM、低置信和需要额外权限的项目不会伪装成可一键修改。
+- 内存管理建议会保护通讯、社交和同步类应用，避免把微信等常驻沟通工具误标为建议退出。
+- 卸载页面收敛为直接卸载流程；App 成功移到废纸篓后，再由用户决定是否清理已确认的相关文件。
+- 应用更新页面只展示经过严格验证、可安全自动更新的项目，支持单项更新和“更新全部”；本应用自身始终交由 Sparkle 更新，避免内部更新流程冲突。
+- 原生 networkQuality 遇到 Apple 1003 瞬时不可用时会自动重试一次，再提供兼容测速方案。
+- 修复关闭所有窗口后立即重新打开可能反应慢的问题，并加强主界面导航状态的 MainActor 隔离。
+- 菜单栏小窗柱状图进一步收窄并调整间距，网络上下行图表保持在卡片内完整显示。
+
+验收：
+
+- 版本：1.9.4（Build 202607222218）。
+- 完整自动化测试：1,714 项通过，0 失败；5 项依赖显式真机或环境的测试按预期跳过。
+- 发布构建、四个归档、SHA-256、嵌套 Sparkle 组件和严格 codesign 均已完成本地校验。
+- 已在真实外接 APFS 卷上核对 App 迁移建议与图标；EXFAT 卷按安全策略只建议迁移普通大文件。
+
+安装与签名说明：
+
+- 请替换整个“存储清理助手.app”，不要合并新旧 App 目录。
+- 应用内更新使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- 当前包使用 Apple Development 签名，不是 Developer ID Application 签名，也未经 Apple 公证。首次手动下载的用户仍可能遇到 Gatekeeper 开发者验证提示；本版本不能描述为 notarized 或 public-safe。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.4/StorageCleanerMac-1.9.4.zip" length="15074547" type="application/octet-stream" sparkle:edSignature="LutFCIpyaF/3cB3Is06AIayc52J44tzpuVB2g9oAdnBqsDyG0YqA9FIpVniqfQr87A7zM2elZQd3cfBRuztzDg=="/>
+        </item>
+        <item>
             <title>1.9.3</title>
             <pubDate>Wed, 22 Jul 2026 18:46:30 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.3</link>
