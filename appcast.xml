@@ -3,6 +3,48 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.6</title>
+            <pubDate>Fri, 24 Jul 2026 20:43:59 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.6</link>
+            <sparkle:version>202607241944</sparkle:version>
+            <sparkle:shortVersionString>1.9.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.6
+
+本版重点：
+
+- 性能测试成为独立一级入口，继续按一次点击依次完成 CPU、图形与媒体、持续性能测试。
+- 菜单栏小窗重新显示当前风扇模式和能源模式，只读取系统真实能力与状态。
+- 安全清理升级为“扫描快照 → 用户选择 → 不可变 Clean Plan → Preflight → 用户确认 → 废纸篓或隔离区 → 执行验证 → 清理报告”。
+- 清理前会复核路径边界、文件身份、文件类型、符号链接、卷身份、写入权限、云文件状态、用户排除项和相关应用运行状态。
+- 支持部分失败和安全取消；成功、跳过、失败及未处理项目分别报告。
+- 同一 Clean Plan 最多执行一次；重新扫描、规则或执行模式变化后，旧计划自动失效。
+- 支持 macOS 废纸篓和 App 专用隔离区。普通清理不执行永久删除，隔离项目可在身份校验通过后恢复。
+- 恢复不会覆盖原位置已有文件；隔离内容发生身份变化、路径越界或符号链接替换时会拒绝恢复。
+- 报告分别显示已移动体积、预计回收空间、隔离区可恢复体积、可用空间变化和实际永久释放空间。
+- 首次进入 1.9.6 清理功能时会幂等迁移 1.9.5 排除路径；旧扫描、清理及恢复历史保持不变，旧扫描结果和待执行计划不会直接复用。
+- 修复无效旧版排除项可能错误排除整个用户目录的问题。
+
+验证：
+
+- 版本：1.9.6（Build 202607241944）。
+- 完整自动化测试：1,771 项，0 失败；5 项依赖显式硬件或环境的测试按预期跳过。
+- 从冻结提交 v1.9.6-rc.3 完成干净 Release 构建、四个归档、SHA-256、嵌套 Sparkle 组件和严格 codesign 校验。
+- 在一次性 macOS VM 中完成真实 1.9.5 → 1.9.6 Sparkle 替换、旧进程退出、新进程重启、V2 模式回读和合成数据迁移。
+- 错误 EdDSA 签名会被 Sparkle 拒绝，原 1.9.5 App、配置和合成数据保持完整。
+- 已验证不可变 Clean Plan、dry-run、隔离清理、部分失败、文件身份变化、symlink swap、权限变化、恢复成功和恢复冲突。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要合并新旧 App 目录。
+- 应用内更新使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- 当前包使用 Apple Development 签名，不是 Developer ID Application 签名，也未经 Apple 公证。
+- 首次手动下载的新用户仍可能遇到 Gatekeeper 拦截；本版本不能描述为 notarized 或 public-safe。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.6/StorageCleanerMac-1.9.6.zip" length="15854349" type="application/octet-stream" sparkle:edSignature="hcDD9Be0wGB5eI6pXHmujECaLnXQRATRFb2PbliVbw/mJ8r36TUPU1Wd7goEkaSuI+iGx2e7k7HVokNYNG+wCw=="/>
+        </item>
+        <item>
             <title>1.9.5</title>
             <pubDate>Thu, 23 Jul 2026 21:08:16 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.5</link>
