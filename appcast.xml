@@ -3,6 +3,44 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.9</title>
+            <pubDate>Wed, 05 Aug 2026 22:21:46 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.9</link>
+            <sparkle:version>202608052103</sparkle:version>
+            <sparkle:shortVersionString>1.9.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.9
+
+本版重点：
+
+- 应用更新现在使用统一的“扫描 → 检查 → 确认 → 更新队列 → 重新扫描 → 完成报告”流程。普通 App Store 项目继续交由系统管理；只有收据、签名、应用身份和产品 ID 都精确验证通过的项目才会进入自动队列。
+- 更新执行会冻结点击时的应用身份和目标版本，并在真正安装前再次检查磁盘版本、签名、运行状态和剩余空间。失败、取消、等待退出、恢复执行和更新后重新打开会分别报告，不再把真实完成的 App Store 更新显示成“未执行”。
+- 浏览器隐私改成可操作的只读流程：扫描结果默认遮罩，按浏览器整理人工处理步骤，明确复制所选域名并打开对应浏览器的历史管理页，处理后回到应用重新扫描确认。
+- 浏览器原始 URL、标题、搜索词和域名只保存在本次内存会话，不上传、不写入偏好，也不直接修改浏览器数据库。真实域名只有在用户点击复制时才进入剪贴板。
+- 复核现在精确验证原浏览器配置文件是否完整读取，并按记录数量处理重复项；换成另一个配置文件、权限不足、部分读取、取消或失败都不会显示“已清除”。切换左侧页面也不会再丢失本次扫描和复核状态；同一浏览器存在多条结果时，筛选菜单会按浏览器去重，不再崩溃。
+- 性能测试保持一个正式 V9 流程，依次测试 CPU、GPU、内存、存储、显示和 600 秒持续性能，预计总用时 14–16 分钟。成绩会保存到当前版本历史并显示本机最新与最佳结果。
+- 排行榜默认只读取，不会自动上传。只有当前 V9 结果满足电源、温度、完整性和置信度要求，并由用户明确确认后，才会提交匿名设备名和白名单中的跑分字段。
+- Release 打包门现在同时冻结 V9 客户端/服务端协议、评分、排行榜、正式计划时长和生产校准，避免旧协议或测试未实际执行的候选进入发布包。
+- 小窗内存压力不再把“100−系统余量”冒充为可与 iStat 或活动监视器直接比较的压力百分比；主值和圆环改为正常、升高或高这三级状态，系统原始余量单独显示，补数仅保留为历史趋势估算。
+- 已合并远端主线的 Swift 6、Xcode 16.2、CI runner、图标加载、更新事件缓冲和测试兼容性修复。
+
+验收：
+
+- 版本为 1.9.9（Build 202608052103），不会覆盖现有 v1.9.8 及更早版本的标签、Release、appcast 条目或资产。
+- 本机 Release 全量测试连续 5/5 通过，每轮 2393 项、10 项按环境跳过、0 失败；生产 Benchmark 发布合同 33/33 通过。
+- 本次公开测试版使用 Apple Development 签名，未使用 Developer ID，也未经 Apple 公证；不能描述为 Gatekeeper 已批准或 public-safe。
+
+安装与更新：
+
+- 请替换整个“存储清理助手.app”，不要合并新旧 App 目录。稳定使用 /Applications/存储清理助手.app 能减少 macOS 重复询问文件访问权限。
+- 应用内更新仅使用公开 StorageCleanerMacUpdates 仓库和 Sparkle EdDSA 签名。
+- macOS 可能阻止直接双击；请在 Applications 中按住 Control 点击 App，选择“打开”并再次确认。
+- 如果仍提示“文件已损坏”，可在终端运行：xattr -dr com.apple.quarantine /Applications/存储清理助手.app，然后重新打开应用。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.9/StorageCleanerMac-1.9.9.zip" length="18873337" type="application/octet-stream" sparkle:edSignature="oyGcgcoqD21H3sWLdGc4ELhoG7Q+D0kO5c+J1PMvzei19cciPecaHkEhjD6m2ch1ydjmE9nQvTlQGG/XKJ/dAQ=="/>
+        </item>
+        <item>
             <title>1.9.8</title>
             <pubDate>Thu, 30 Jul 2026 18:13:04 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.8</link>
