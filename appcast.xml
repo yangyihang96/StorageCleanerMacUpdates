@@ -3,6 +3,33 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.11</title>
+            <pubDate>Fri, 14 Aug 2026 23:26:25 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.11</link>
+            <sparkle:version>202608142241</sparkle:version>
+            <sparkle:shortVersionString>1.9.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.11
+
+本版重点：
+
+- 主窗口标题栏改为产品名加紧凑 Beta 标记，各功能页共用同一套页头图标和侧栏版本信息。
+- 小窗继续把风扇监测和风扇控制分开：传感器卡片只读转速和 Helper 状态；模式、滑条和曲线编辑只在吸附面板里。
+- 风扇滑条改为手势控制，Helper 心跳放宽到 30 秒，并阻止第二个图形界面实例抢走 Helper 租约。
+- 从控制锚点移到三级面板时不再误关面板；重新启动后面板行仍可点击，过期的“连接中断”可以自行恢复。
+- 应用更新新增 Keystone/Squirrel 厂商更新路径，并对已有可信应用内更新通道的 Sparkle 应用显示可用结果。
+- 缓存本地化语言查询、合并 CPU 采样、用原生尺寸读取替代逐项 du/mdls，并收紧小窗遥测与重复文件进度刷新。
+
+验证与安装：
+
+- 版本 1.9.11（Build 202608142241），归档校验、代码签名及 Sparkle EdDSA 签名已通过。
+- 本次公开测试版使用 Apple Development 签名，不是 Developer ID Application，也未经 Apple 公证；不能描述为 Gatekeeper 已批准版本。
+- 请替换整个“存储清理助手.app”，不要合并新旧 App 目录。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.11/StorageCleanerMac-1.9.11.zip" length="19630885" type="application/octet-stream" sparkle:edSignature="egfuFOKr16uCRpxsIrO+dV4qi77o91llMmFWXcKohF29gsNv/MAtm171OZUVX4AqqqVvwKvpItoY5oeA1b79Bw=="/>
+        </item>
+        <item>
             <title>1.9.10</title>
             <pubDate>Thu, 13 Aug 2026 19:54:49 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.10</link>
