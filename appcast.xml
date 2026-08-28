@@ -3,6 +3,34 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.12</title>
+            <pubDate>Fri, 28 Aug 2026 21:07:07 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.12</link>
+            <sparkle:version>202608282037</sparkle:version>
+            <sparkle:shortVersionString>1.9.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.12
+
+本版重点：
+
+- 主窗口改为更完整的全宽工作区，统一各功能页的页头、按钮、间距、状态和响应式布局；在支持的最小窗口尺寸下，文字与图标不会互相遮挡。
+- 文件分析改为应用内逐层展开，文件列表、面包屑和空间占用地图保持同步；颜色稳定代表文件类型，并正确显示容量、比例和未完整测量范围。
+- 智能扫描扩充清理覆盖范围；开发工具与构建产物会按最近活动时间和来源工具分级，清理前仍执行身份与变更复核。
+- 卸载、能耗、应用更新、浏览器隐私和性能测试改善扫描入口、过程反馈、图标与结果信息。
+- 开机项与应用清单扫描减少重复路径、签名和元数据计算；主线程签名检查、菜单栏遥测与高频界面刷新进一步收敛。
+- 小窗电池能耗面板固定贴合二级菜单；风扇监测与控制继续分离，控制面板改进滑条、预设、状态反馈和悬停操作。
+- 设置新增“访问与设置”，集中显示相关权限状态、系统设置跳转与三步教程。
+
+验证与安装：
+
+- 版本 1.9.12（Build 202608282037），本机 Release 构建、自动化测试、归档校验、严格代码签名及 Sparkle EdDSA 签名均已通过；本次未运行 GitHub Actions 测试。
+- 本次公开测试版使用 Apple Development 签名，不是 Developer ID Application，也没有 Apple 公证或 stapling；不能描述为 Gatekeeper 已批准版本。
+- 请替换整个“存储清理助手.app”，不要合并新旧 App 目录；首次运行可能需要 Control-点击应用并选择“打开”。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.12/StorageCleanerMac-1.9.12.zip" length="20234624" type="application/octet-stream" sparkle:edSignature="892ICNXAnU/KDJmhmRqxXZag2WWvEMbnPbxb2gh6K+QxEMzmValyPpcid9A7bHFRcf8mTatpztx9NUh80QOdCw=="/>
+        </item>
+        <item>
             <title>1.9.11</title>
             <pubDate>Fri, 14 Aug 2026 23:26:25 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.11</link>
