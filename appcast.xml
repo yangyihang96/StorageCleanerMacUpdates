@@ -3,6 +3,27 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>1.9.13</title>
+            <pubDate>Sat, 12 Sep 2026 04:13:29 +1000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.13</link>
+            <sparkle:version>202609120014</sparkle:version>
+            <sparkle:shortVersionString>1.9.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text"><![CDATA[存储清理助手 1.9.13（Build 202609120014）
+
+- 菜单栏加入内存数字、电量半环与三点 Wi-Fi；无电池 Mac 自动适配内存环。
+- 监控历史采用固定时间窗口平均，修复采样抖动空柱与网络、磁盘峰值截断；保留真实中断与原有安全机制。
+- 改善主窗口工作区、小窗三级控制、文件分析筛选及隐私批量选择。
+- 修复 Release 测试编译条件，并补齐正式安装包遗漏的 13 张现有插图，归档逐文件校验。
+- Debug 2791 项、Release 2743 项（各跳过 17 项）零失败；生产校准 34 项、服务端 100 项及类型检查均在本机通过。没有运行 GitHub Actions 测试。
+- 真实硬件流程完成 83/84 次工作负载执行并生成 26 项指标；600 秒持续阶段被温度预检阻断，未记作完整通过。本机运行观察没有新增应用崩溃报告。
+
+安装说明：适用于 Apple Silicon（arm64）、macOS 14 或更新版本。此包使用 Apple Development 签名，未经 Apple 公证，没有 stapling，不是 Developer ID 或 Gatekeeper 已批准版本。首次启动可能需要 Control-点击应用并选择“打开”。请替换整个 .app，不要合并新旧目录。
+]]></description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.9.13/StorageCleanerMac-1.9.13.zip" length="34228526" type="application/octet-stream" sparkle:edSignature="fSJieRPyueL4vAxDAiMjh2AxhR5bJVMxYYYzbT2aOFj3VGcIOaGrpr32f/BO++S3WEQy53iLQMEGZ34arRfsCQ=="/>
+        </item>
+        <item>
             <title>1.9.12</title>
             <pubDate>Fri, 28 Aug 2026 21:07:07 +1000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.9.12</link>
