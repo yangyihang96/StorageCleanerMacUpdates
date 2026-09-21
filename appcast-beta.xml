@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>StorageCleanerMac Beta</title>
+        <item>
+            <title>1.10.1 Beta</title>
+            <pubDate>Mon, 21 Sep 2026 05:19:51 +0000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.10.1</link>
+            <sparkle:version>20260921051316</sparkle:version>
+            <sparkle:shortVersionString>1.10.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">存储清理助手 1.10.1（Build 20260921051316）
+
+- 补齐浅色界面，优化小窗响应、后台采样及历史保存。
+- 完善逐项恢复回执、部分成功处理和联网同意；Core18 暂无生产参考，仅显示原始结果。
+- 正式版与测试版使用独立 Sparkle 更新源、同一可信签名公钥及各自应用标识，不相互替换。
+- 原先禁用更新器的测试版需要先手动替换一次；本次版本支持工具菜单内检查更新。
+
+按用户要求，本次没有运行测试套件。Apple Development 签名，未 Developer ID 公证，其他 Mac 可能阻止打开。Sparkle 签名验证不代表 Gatekeeper 发行批准。未完成扩展、其他硬件和独立视觉／性能验收仍保留。</description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v1.10.1/StorageCleanerMac-Beta-1.10.1.zip" length="34018521" type="application/octet-stream" sparkle:edSignature="5bENPI/86nqXWq4kpEcK77//WQuz711tUEQiKNYwNAheZMxYI5GOhEOXQ5v2X4sMLZfHO2cPHK6AVfBWDfGoBQ==" />
+        </item>
+    </channel>
+</rss>
