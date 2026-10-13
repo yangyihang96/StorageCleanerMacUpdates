@@ -3,6 +3,27 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>2.0.0</title>
+            <pubDate>Tue, 13 Oct 2026 01:03:58 +0000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v2.0.0</link>
+            <sparkle:version>20261012230050</sparkle:version>
+            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">存储清理助手 2.0.0（Build 20261012230050）
+
+- 新主窗口：侧栏按清理、保护、性能、应用、文件分组；日间、夜间与跟随系统；设置改为独立窗口。
+- 智能扫描列出的项目都能勾选，可移入废纸篓，并能从“操作记录”恢复；确认页和完成页分别列出完成、跳过、失败。
+- 新增项目产物清理，只扫描你选择的文件夹；浏览器隐私每条记录显示标题和网址，删除前自动备份。
+- 文件分析可选门槛并盘点本地 AI 模型；新增 iCloud“释放本地副本”；菜单栏小窗打开更快。
+
+本机 Release 5061 项、Debug 5474 项均 0 失败；小窗性能有一项在高负载下超出预算，空闲重跑通过，已披露。没有运行 GitHub Actions。
+已知问题：跑分历史超过 1 MiB 后，新结果无法保存，只能在本次运行中查看。访达右键卸载与系统照片图库仍只在测试版提供。
+
+Apple Development 签名，未经 Apple 公证，没有 stapling，其他 Mac 可能阻止打开。Sparkle 签名验证不代表 Gatekeeper 发行批准。</description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v2.0.0/StorageCleanerMac-2.0.0.zip" length="51745098" type="application/octet-stream" sparkle:edSignature="4LivCzuu5QpmQUM8E5qPnkI473SvYfixTVsIsx9oVpSMPxDZ7ntbH8i5JyRw9LQWXER/Dz+CeVKCsOAWS0B4Dw==" />
+        </item>
+        <item>
             <title>1.10.1</title>
             <pubDate>Mon, 21 Sep 2026 05:19:51 +0000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v1.10.1</link>
