@@ -3,6 +3,28 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>2.0.1</title>
+            <pubDate>Mon, 26 Oct 2026 08:34:26 +0000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v2.0.1</link>
+            <sparkle:version>20261026012034</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">存储清理助手 2.0.1（Build 20261026012034）
+
+- 全新界面：侧栏平铺十个模块，各有配色、插画和动效；新增“我的工具”和“我的活动”；设置改为顶部页签，首次引导改为三屏。
+- 智能扫描一次检查清理、防护、性能、应用、杂乱五项，你确认后才清理或执行维护任务。
+- 垃圾清理新增系统缓存、外接盘和 iCloud 云盘的废纸篓、邮件库附件、损坏的偏好设置和应用瘦身；安全防护新增恶意软件扫描和“最近使用项目”清理。
+- 应用管理新增扩展和“其他位置的应用”；杂乱文件新增大型和旧文件、按来源分组的下载、聊天文件；空间地图新增方块图；新增云盘清理、按类别的忽略列表和四类提醒。
+- 菜单栏小窗重新设计：新的面板布局、10 分钟到 28 天的历史图、14 套配色主题和重做的风扇控制。
+- 修正：主窗口按钮恢复；跑分历史超过 1 MiB 后也能保存；操作没能开始时如实说明，不移动任何文件。
+
+本机 Release 5912 项、Debug 6205 项均 0 失败，窗口测试 660 项 0 失败；没有运行 GitHub Actions。系统缓存删除、应用瘦身、第三方云盘释放本机副本等会改动文件的新功能只有自动测试，未在真机上执行。访达右键卸载与系统照片图库仍只在测试版提供。
+
+Apple Development 签名，未经 Apple 公证，没有 stapling，其他 Mac 可能阻止打开。Sparkle 签名验证不代表 Gatekeeper 发行批准。</description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v2.0.1/StorageCleanerMac-2.0.1.zip" length="57604007" type="application/octet-stream" sparkle:edSignature="NsMftDp/8Uv2QY/IG0CcSzIPh1mgsrsx1Vqh+OFiws3maIa9YFRQNZMVMz/eLxwjiTI4CdWVUYaEdRxwYbUUDA==" />
+        </item>
+        <item>
             <title>2.0.0</title>
             <pubDate>Tue, 13 Oct 2026 01:03:58 +0000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v2.0.0</link>
