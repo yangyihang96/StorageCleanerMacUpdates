@@ -3,6 +3,28 @@
     <channel>
         <title>StorageCleanerMac</title>
         <item>
+            <title>2.0.2</title>
+            <pubDate>Sat, 07 Nov 2026 06:51:36 +0000</pubDate>
+            <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v2.0.2</link>
+            <sparkle:version>20261106235021</sparkle:version>
+            <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="plain-text">存储清理助手 2.0.2（Build 20261106235021）
+
+- 文字更清楚：各模块彩色底色上的可点文字、灰字和状态文字调过颜色；填充按钮上的字按底色取白色或深色。
+- 设置窗口重新整理，默认打开得够大。新增“AI 助手”页：默认关闭，只走本机连接，只能读取。
+- 退出主程序后，菜单栏小窗可以继续运行；登录时可以只打开小窗；只留小窗时减少常驻内存。
+- 日期跟随界面语言，中文统一用 24 小时制。
+- 空闲和可用内存不再重复计算系统预读的文件页；较早的系统上，读取内存不再每 2 秒多一条系统日志警告。
+- 清除系统缓存会留下操作记录；运行中应用的缓存不再预先勾选；启动项“需要关注”写出原因。
+
+本机 Release 6111 项、Debug 6403 项和窗口测试 669 项均 0 失败；没有运行 GitHub Actions。瘦身后一步换回原名等几项会改动文件的新行为只有自动测试；内存读数的两项修正没有在 macOS 15、26 上实测。访达右键卸载与系统照片图库仍只在测试版提供。
+
+Apple Development 签名，未经 Apple 公证，没有 stapling，其他 Mac 可能阻止打开。Sparkle 签名验证不代表 Gatekeeper 发行批准。</description>
+            <enclosure url="https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/download/v2.0.2/StorageCleanerMac-2.0.2.zip" length="58586179" type="application/octet-stream" sparkle:edSignature="tKjNH53us/j4LYTHZvJB8gESb1kSg2ccbM2yQNO7Ff+pf+H3ZJYMi2U+K3sJYrCB+vp1OvfkJeuu91Yxkyx9DQ==" />
+        </item>
+        <item>
             <title>2.0.1</title>
             <pubDate>Mon, 26 Oct 2026 08:34:26 +0000</pubDate>
             <link>https://github.com/yangyihang96/StorageCleanerMacUpdates/releases/tag/v2.0.1</link>
